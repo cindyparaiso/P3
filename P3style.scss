@@ -10,7 +10,6 @@ $color-menu3: #EFEFEF;
 $color-menu4: #F2FFF2;
 $color-bann: #579C87;
 $anim-dur: 1000ms;
-$cd-txt: #6300a0;
 $cd-box: #360000;
 $form-size: 2rem;
 
@@ -30,25 +29,23 @@ html {
 body {
 	box-sizing: border-box;
 	background: #fff;
-	text-align: center;
+  text-align: center;
+  margin: 0;
 }
 
 
 @mixin graphic-design {
-	 background: $color-bann;
-	 text-align: center;
-     padding: $form-size;
+	background: $color-bann;
+	text-align: center;
+  padding: $form-size;
+  font-family: 'Montserrat', sans serif;
 }  
 
-a 
-{
-	 color: $color-txt;
-     text-decoration: none; 
-}
   
 @mixin box-position {
 	display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 header {
@@ -58,18 +55,24 @@ header {
 footer {
   @include graphic-design;
   @include box-position;
-  justify-content: space-around;
   width: 100%;
   position: fixed;
   bottom: 0;
 }
+ footer a {
+    color: $color-txt;
+    text-decoration: none; 
+  }
+    
+  @mixin box-position {
+ }
 
 .container {
 	display: flex;
  	flex-direction: column;
-  	align-items: center;
+  align-items: center;
 	justify-content: center;
-    margin-bottom: 11%;
+  margin-bottom: 11%;
 }
 
 .container1 {
@@ -98,13 +101,12 @@ footer {
 	  }
 }
 
-@mixin menu-btn-style {
+.menu-btn  {
  font-size: 1rem;
  cursor: pointer;
  overflow: hidden; 
  padding: 5rem 1.3rem;
  margin: 0.9rem 0.9rem; 
- width: 95%;
  box-shadow: $color-shadow; 
 }
 
@@ -130,7 +132,6 @@ footer {
 
 }
 .menu1 {
-  @include menu-btn-style; 
   color: $color-txt1;
   background-color: $color-menu1;
 }
@@ -142,13 +143,11 @@ footer {
 }
 
 .menu2 {
-   @include menu-btn-style; 
-   background-color:$color-menu2; 
+  background-color:$color-menu2; 
 }
 
 .menu3 {
-  @include menu-btn-style;
-	color: $color-txt3; 
+  color: $color-txt3; 
   background-color: $color-menu3;
 }
 
@@ -157,7 +156,6 @@ footer {
   @include gradientcolors;
 }
 .menu4 {
-  @include menu-btn-style;
   background-color: $color-menu4;
 }
 
@@ -207,10 +205,10 @@ footer {
 .Prochainement {
 	background: $color-bann;
 	color: $color-txt; 
-    cursor: pointer;
-    width: 14%;  
-    padding: 0.85rem 0.7rem;
-    border-radius: 1rem;
+  cursor: pointer;
+  width: 14%;  
+  padding: 0.85rem 0.7rem;
+  border-radius: 1rem;
 	margin: $form-size;
 }
   
@@ -346,17 +344,6 @@ p
 	font-size: 1.1rem;
 }
 
-header, footer
-{
-     display: flex;
-     flex-direction: row; 
-     justify-content: space-around;  
-	 background: #579C87;
-	 color: #FDCB46;
-     padding: 2rem; 
-	 font-family: 'Montserrat', sans-serif;
-}
-
 li
 {
 	display: flex;
@@ -372,7 +359,7 @@ i
 
 img 
 {  
-  width: 27%; 
+  width: 54%; 
   height: auto;
   float: center;
 }
@@ -384,19 +371,14 @@ img
 }  
  @media all and (max-width: 768px)
   {
-  	.header
+  	header
   		{
 
   		}
- 	.container
+ 	  footer
  	 	{
- 	 		width: 100%		
+ 	 		width: 100%;		
  	 	}
- 	  	
- 	.loisirs
-	{
-		margin: 0;
-	}
-}
+  }  	
 
 	
