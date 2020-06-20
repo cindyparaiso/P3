@@ -27,9 +27,11 @@ footer {
   font-family: 'Montserrat', sans serif;
   display: flex;
   flex-direction: row;
+  justify-content: space-aceround;
   justify-content: space-around;
   width: 100%;
   position: fixed;
+  color: #FDCB46;
   bottom: 0; }
 
 a {
@@ -45,23 +47,14 @@ a {
 .container1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-aceround; }
 
 .container2 {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-aceround; }
 
-.menu-btn {
-  width: 45%;
-  font-size: 1rem;
-  cursor: pointer;
-  overflow: hidden;
-  padding: 5rem 1.3rem;
-  margin: 0.9rem 0.9rem;
-  box-shadow: 0.2rem 0.4rem 0.4rem 0.2rem #D8D8D8; }
-
-.menu__txt {
+.menupage__title, .menu__txt {
   width: 50%;
   height: auto;
   opacity: 1;
@@ -75,9 +68,20 @@ a {
   filter: alpha(opacity=85);
   zoom: 1; }
 
+.menupage__title:hover .menupage__title {
+  transform: scale 1.4;
+  transform-origin: center; }
+
 .menu1 {
   color: #3C1218;
-  background-color: #FCDFDB; }
+  background-color: #FCDFDB;
+  width: 45%;
+  font-size: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 5rem 1.3rem;
+  margin: 0.9rem 0.9rem;
+  box-shadow: 0.2rem 0.4rem 0.4rem 0.2rem #D8D8D8; }
 
 .menu__txt--colored {
   background: -webkit-linear-gradient(#C77412, #9861EF);
@@ -85,11 +89,25 @@ a {
   -webkit-text-fill-color: transparent; }
 
 .menu2 {
-  background-color: #FFDDFC; }
+  background-color: #FFDDFC;
+  width: 45%;
+  font-size: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 5rem 1.3rem;
+  margin: 0.9rem 0.9rem;
+  box-shadow: 0.2rem 0.4rem 0.4rem 0.2rem #D8D8D8; }
 
 .menu3 {
   color: #3D9FFA;
-  background-color: #EFEFEF; }
+  background-color: #EFEFEF;
+  width: 45%;
+  font-size: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 5rem 1.3rem;
+  margin: 0.9rem 0.9rem;
+  box-shadow: 0.2rem 0.4rem 0.4rem 0.2rem #D8D8D8; }
 
 .menu__txt--green {
   background: -webkit-linear-gradient(#69B852, #C8FE94);
@@ -97,7 +115,14 @@ a {
   -webkit-text-fill-color: transparent; }
 
 .menu4 {
-  background-color: #F2FFF2; }
+  background-color: #F2FFF2;
+  width: 45%;
+  font-size: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 5rem 1.3rem;
+  margin: 0.9rem 0.9rem;
+  box-shadow: 0.2rem 0.4rem 0.4rem 0.2rem #D8D8D8; }
 
 .points {
   font-size: 2rem; }

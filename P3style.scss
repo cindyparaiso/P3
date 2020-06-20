@@ -45,7 +45,7 @@ body {
 @mixin box-position {
 	display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-aceround;
 }
 
 header {
@@ -55,9 +55,10 @@ header {
 footer {
   @include graphic-design;
   @include box-position;
+  justify-content: space-around;
   width: 100%;
   position: fixed;
-  $color-txt: #FDCB46;
+  color: #FDCB46;
   bottom: 0;
 }
 
@@ -99,7 +100,7 @@ a {
 	  }
 }
 
-.menu-btn  {
+@mixin menu-btn-style {
  width:45%; 
  font-size: 1rem;
  cursor: pointer;
@@ -109,7 +110,7 @@ a {
  box-shadow: $color-shadow; 
 }
 
-.menu__txt { 
+.menupage__title, .menu__txt { 
   width: 50%;
   height: auto;
   opacity: 1;
@@ -125,6 +126,11 @@ a {
   zoom: 1;
 } 
 
+.menupage__title:hover .menupage__title {
+  transform: scale (1.4);
+  transform-origin: center;
+}
+
 @mixin gradientcolors {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -133,6 +139,7 @@ a {
 .menu1 {
   color: $color-txt1;
   background-color: $color-menu1;
+  @include menu-btn-style;
 }
 
 
@@ -143,11 +150,13 @@ a {
 
 .menu2 {
   background-color:$color-menu2; 
+  @include menu-btn-style;
 }
 
 .menu3 {
   color: $color-txt3; 
   background-color: $color-menu3;
+  @include menu-btn-style;
 }
 
 .menu__txt--green {
@@ -156,6 +165,7 @@ a {
 }
 .menu4 {
   background-color: $color-menu4;
+  @include menu-btn-style;
 }
 
 .points {
