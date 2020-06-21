@@ -45,7 +45,6 @@ body {
 @mixin box-position {
 	display: flex;
   flex-direction: row;
-  justify-content: space-aceround;
 }
 
 header {
@@ -66,7 +65,7 @@ a {
   }
 
 footer a{
-color: $color-txt; 
+  color: $color-txt; 
 }  
   
  .container {
@@ -135,16 +134,15 @@ color: $color-txt;
 }
 
 @mixin gradientcolors {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
+  background-clip: text;
+  color: transparent;
 }
+
 .menu1 {
   color: $color-txt1;
   background-color: $color-menu1;
   @include menu-btn-style;
 }
-
 
 .menu__txt--colored {
   background: -webkit-linear-gradient(#C77412, #9861EF);
@@ -163,7 +161,7 @@ color: $color-txt;
 }
 
 .menu__txt--green {
-  background: -webkit-linear-gradient(#69B852, #C8FE94);
+  background: linear-gradient(#69B852, #C8FE94);
   @include gradientcolors;
 }
 .menu4 {
@@ -259,15 +257,13 @@ h2 {
     }
 
 .hr {  
-  display : flex;
-  flex-direction: row;
+  @include box-position;
   align-items: space-around;
   justify-content: center;
   width: 20%;
 }
 
-.menupage__title
-{	
+.menupage__title {	
 	text-align: center;
 	font-size: 2em;
 	background: linear-gradient(to top, #C77412 0%, #C77412 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
@@ -278,45 +274,37 @@ h2 {
 	background: 100% 100%;
 }	
 
-@mixin menupage-style
+.menupage
 {
 	margin: 9%;  
-	border-radius: 1px;
-	box-shadow: 4px 7px 4px 4px rgb(241, 241, 241); 
+  border-radius: $form-size;
+  box-shadow: $color-shadow; 
 	text-align: center;
-}		
-
-@mixin menuform {
 	font-family: 'Bad Script', cursive;
-	color: #3C1218;
-}
-
-.menupage  {
-	font-family: 'Bad Script', sans-serif;
-	@include menupage-style;
-	@include menuform;
 }
 
 .menu1page
 {
+  color: #3C1218;
 	background: #FCDFDB;
-	margin-bottom: 11%;
+	margin-bottom: 18%;
 }
 
 .menu2page
 {
 	background: #FFF5FE;
-	margin-bottom: 11%;
+  margin-bottom: 18%;
+  
 }
 
 .menu3page {
 	background: #EDEFEF;
-	margin-bottom: 11%;
+	margin-bottom: 18%;
 }
 
 .menu4page {
 	background: #FDFFFD;
-	margin-bottom: 11%;
+	margin-bottom: 18%;
 }
 
 .menu1page__title {
@@ -355,6 +343,12 @@ img {
   width: 27%; 
   height: auto;
   float: center;
+}
+
+i {
+  color: transparent; 
+  background: linear-gradient(70deg, #F05861,#F6916A);
+  background-clip: text;
 }
 
 svg {

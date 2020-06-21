@@ -27,7 +27,6 @@ footer {
   font-family: 'Montserrat', sans serif;
   display: flex;
   flex-direction: row;
-  justify-content: space-aceround;
   justify-content: space-around;
   width: 100%;
   position: fixed;
@@ -48,13 +47,11 @@ footer a {
 
 .container1 {
   display: flex;
-  flex-direction: row;
-  justify-content: space-aceround; }
+  flex-direction: row; }
 
 .container2 {
   display: flex;
-  flex-direction: row;
-  justify-content: space-aceround; }
+  flex-direction: row; }
 
 .menupage__title, .menu__txt {
   width: 50%;
@@ -87,8 +84,8 @@ footer a {
 
 .menu__txt--colored {
   background: -webkit-linear-gradient(#C77412, #9861EF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  background-clip: text;
+  color: transparent; }
 
 .menu2 {
   background-color: #FFDDFC;
@@ -112,9 +109,9 @@ footer a {
   box-shadow: 0.2rem 0.4rem 0.4rem 0.2rem #D8D8D8; }
 
 .menu__txt--green {
-  background: -webkit-linear-gradient(#69B852, #C8FE94);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  background: linear-gradient(#69B852, #C8FE94);
+  background-clip: text;
+  color: transparent; }
 
 .menu4 {
   background-color: #F2FFF2;
@@ -201,29 +198,28 @@ h2 {
   background: 100% 100%; }
 
 .menupage {
-  font-family: 'Bad Script', sans-serif;
   margin: 9%;
-  border-radius: 1px;
-  box-shadow: 4px 7px 4px 4px #f1f1f1;
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.4rem 0.4rem 0.2rem #D8D8D8;
   text-align: center;
-  font-family: 'Bad Script', cursive;
-  color: #3C1218; }
+  font-family: 'Bad Script', cursive; }
 
 .menu1page {
+  color: #3C1218;
   background: #FCDFDB;
-  margin-bottom: 11%; }
+  margin-bottom: 18%; }
 
 .menu2page {
   background: #FFF5FE;
-  margin-bottom: 11%; }
+  margin-bottom: 18%; }
 
 .menu3page {
   background: #EDEFEF;
-  margin-bottom: 11%; }
+  margin-bottom: 18%; }
 
 .menu4page {
   background: #FDFFFD;
-  margin-bottom: 11%; }
+  margin-bottom: 18%; }
 
 .menu1page__title {
   font-family: 'Devonshire', cursive;
@@ -233,8 +229,8 @@ h2 {
   font-family: 'Bree Serif', serif;
   font-size: 2rem;
   background: -webkit-linear-gradient(#C77412, #9861EF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  background-clip: text;
+  color: transparent; }
 
 .menu3page__title {
   font-family: 'Dancing Script', cursive;
@@ -256,6 +252,11 @@ img {
   width: 27%;
   height: auto;
   float: center; }
+
+i {
+  color: transparent;
+  background: linear-gradient(70deg, #F05861, #F6916A);
+  background-clip: text; }
 
 svg {
   width: 23%; }
