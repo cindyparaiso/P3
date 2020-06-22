@@ -70,11 +70,18 @@ footer a {
   
  .container {
 	display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
 	justify-content: center;
-  margin-bottom: 27%;
+  margin-bottom: 18%;
+}
+
+.container1 {
+  @include box-position;
+}
+
+.container2 {
+  @include box-position;
 }
 
 @mixin text-body {
@@ -105,12 +112,13 @@ footer a {
  box-shadow: $color-shadow; 
 }
 
-.menupage__title, .menu__txt { 
-  width: 40%;
+.menu__txt { 
+  width: 45%;
   height: auto;
   opacity: 1;
   filter: alpha(opacity=100);
   zoom: 1;
+  text-align: center;
 }
   
 .menu :hover .menu__txt {
@@ -121,14 +129,19 @@ footer a {
   zoom: 1;
 } 
 
-.menupage__title:hover .menupage__title {
-  transform: scale (1.4);
-  transform-origin: center;
+.menu__txt--1 {
+color:  ;
+font-family:;
+}
+
+.menu__txt--2 {
+  color:;
+  font-family:;
 }
 
 @mixin gradientcolors {
-  background-clip: text;
-  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu1 {
@@ -154,9 +167,11 @@ footer a {
 }
 
 .menu__txt--green {
-  background: linear-gradient(#69B852, #C8FE94);
+  font-family: 'Kaushan Script', cursive;
+  background: -webkit-linear-gradient(#69B852, #C8FE94);
   @include gradientcolors;
 }
+
 .menu4 {
   background-color: $color-menu4;
   @include menu-btn-style;
@@ -253,7 +268,6 @@ h2 {
   @include box-position;
   align-items: space-around;
   justify-content: center;
-  width: 20%;
 }
 
 .menupage__title {	
@@ -263,12 +277,11 @@ h2 {
   transition: background-size .3s;
 }
 
-.menupage__title:hover {	
+.menupage__title:hover .menupage__title {	
 	background: 100% 100%;
 }	
 
-.menupage
-{
+.menupage {
 	margin: 9%;  
   border-radius: $form-size;
   box-shadow: $color-shadow; 
@@ -276,53 +289,55 @@ h2 {
 	font-family: 'Bad Script', cursive;
 }
 
-.menu1page
-{
-  color: #3C1218;
-	background: #FCDFDB;
-	margin-bottom: 18%;
+.menu1page {
+  color: $cd-txt1;
+  background: $color-menu1;
+  padding: 5%;
 }
 
-.menu2page
-{
-	background: #FFF5FE;
-  margin-bottom: 18%;
-  
-}
+.menu2page {
+  color: $cd-txt1;
+  background: $color-menu2;  
+  padding: 5%;
+  }
 
 .menu3page {
-	background: #EDEFEF;
-	margin-bottom: 18%;
+  background: $color-menu3;
+  padding: 5%;
 }
 
 .menu4page {
-	background: #FDFFFD;
-	margin-bottom: 25%;
+  background: $color-menu4;
+  padding: 5%;
 }
 
 .menu1page__title {
 	font-family: 'Devonshire', cursive;
-	font-size: 2.9rem;
-  $cd-box: #360000;
+  font-size: $form-size;  
+  color: $cd-txt1;
+  background-color: $color-menu1;
 }
 
 .menu2page__title {
 	font-family: 'Bree Serif', serif;
-	font-size: 2rem;
+  font-size: $form-size;
   background: -webkit-linear-gradient(#C77412, #9861EF);
   @include gradientcolors;
+  background-color: $color-menu2;
 }
 
 .menu3page__title {
 	font-family: 'Dancing Script', cursive;
-	font-size: 2rem;
-	color: $color-txt3;
-}
+  font-size: $form-size;
+  color: $color-txt3;
+  background-color: $color-menu3;
+  }
 
 .menu4page__title {
 	font-family: 'Kaushan Script', cursive;
-	font-size: 2rem;
-	color: $color-txt4;
+  font-size: $form-size;
+  color: $color-txt4;
+  background-color: $color-menu4; 
 }
 
 li {
@@ -341,11 +356,7 @@ img {
 i {
   color: transparent; 
   background: linear-gradient(70deg, #F05861,#F6916A);
-  background-clip: text;
-}
-
-svg {
-  width: 23%;
+  -webkit-background-clip: text;
 }
 
 .selector-for-some-widget
