@@ -70,18 +70,11 @@ footer a {
   
  .container {
 	display: flex;
- 	flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
 	justify-content: center;
-  margin-bottom: 11%;
-}
-
-.container1 {
-  @include box-position;
-}  
-
-.container2 {
-  @include box-position;
+  margin-bottom: 25%;
 }
 
 @mixin text-body {
