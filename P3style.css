@@ -17,13 +17,11 @@ body {
 header {
   background: #579C87;
   text-align: center;
-  padding: 2rem;
   font-family: 'Montserrat', sans serif; }
 
 footer {
   background: #579C87;
   text-align: center;
-  padding: 2rem;
   font-family: 'Montserrat', sans serif;
   display: flex;
   flex-direction: row;
@@ -69,14 +67,14 @@ footer a {
   width: 45%;
   height: auto;
   opacity: 1;
-  filter: alpha(opacity=100);
+  filter: alpha(opacity=95);
   zoom: 1; }
 
 .menu :hover .menu__txt {
   transform: scale(1.4);
   transform-origin: center;
   opacity: 0.85;
-  filter: alpha(opacity=85);
+  filter: alpha(opacity=100);
   zoom: 1; }
 
 .points {
@@ -157,18 +155,18 @@ hr {
   margin: 8%;
   padding: 3.5%; }
 
-.menucarte--1 {
+.menu1page {
   color: #360000;
   background: #FCDFDB; }
 
-.menucarte--2 {
+.menu2page {
   color: #360000;
   background: #FFDDFC; }
 
-.menucarte--3 {
+.menu3page {
   background: #EFEFEF; }
 
-.menucarte--4 {
+.menu4page {
   background: #F2FFF2; }
 
 .menupage__title {
@@ -176,9 +174,7 @@ hr {
 
 .menu1page__title {
   font-family: 'Devonshire', cursive;
-  font-size: 1.6rem;
-  color: #360000;
-  background-color: #FCDFDB; }
+  font-size: 1.6rem; }
 
 .menu2page__title {
   font-family: 'Bree Serif', serif;
@@ -197,7 +193,7 @@ hr {
 .menu3page__title {
   font-family: 'Dancing Script', cursive;
   font-size: 1.6rem;
-  background: -webkit-linear-gradient(#0431DF, #2B91F8);
+  background: -webkit-gradient(linear, left top, right bottom, from(#0431DF), to(#2B91F8));
   background: -moz-linear-gradient(#0431DF, #2B91F8);
   background: -o-linear-gradient(#0431DF, #2B91F8);
   -webkit-background-clip: text;
@@ -241,6 +237,11 @@ li {
   -moz-text-fill-color: transparent;
   -o-text-fill-color: transparent;
   background-color: #FCDFDB; }
+
+img {
+  width: 25%;
+  height: auto;
+  float: center; }
 
 .selector-for-some-widget {
   box-sizing: content-box; }
