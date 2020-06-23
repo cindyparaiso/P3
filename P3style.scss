@@ -39,6 +39,7 @@ body {
 	background: $color-bann;
 	text-align: center;
   font-family: 'Montserrat', sans serif;
+  height: 27%;
  }  
 
   
@@ -204,8 +205,7 @@ footer a {
 
 hr {  
   @include box-position;
-  align-items: space-between;
-  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
