@@ -39,7 +39,7 @@ body {
 	background: $color-bann;
 	text-align: center;
   font-family: 'Montserrat', sans serif;
-  height: 18%;
+  height: 16%;
  }  
 
   
@@ -67,7 +67,7 @@ a {
 
 footer a {
   color: $color-txt; 
-  font-size: $form-size;
+  font-size: 1.1rem;
 }  
   
  .container {
@@ -98,21 +98,18 @@ footer a {
 }
 
 .menu__txt { 
-  text-align: center;
-  width: 45%;
+  width: 50%;
   height: auto;
   opacity: 1;
-  filter: alpha(opacity=95);
-  zoom: 1;
-}
+  filter: alpha(opacity=100);
+ }
   
 .menu :hover .menu__txt {
   transform: scale(1.4);
   transform-origin: center; 
   opacity: 0.85;
-  filter: alpha(opacity=100);
-  zoom: 1;
-} 
+  filter: alpha(opacity=85);
+ } 
 
 @mixin gradientcolors {
   -webkit-background-clip: text;
@@ -201,9 +198,8 @@ footer a {
 
 hr {  
   @include box-position;
-  align-items: center;
+  align-content: center;
   justify-items: center;
-  text-align: center;
 }
 
 .hr h2 {  
@@ -219,12 +215,12 @@ hr {
 .menupage {
   box-shadow: $color-shadow; 
   border-radius: $title-size;
+  margin: 8%; 
 }
 
 .menucarte {
   text-align: justify;
   font-family: 'Bad Script', cursive;
-  margin: 8%; 
   padding: 3.5%; 
 }
 
@@ -249,6 +245,7 @@ hr {
 .menupage__title {
   text-align: center;
 }
+
 .menu1page__title {
 	font-family: 'Devonshire', cursive;
   font-size: $title-size;  
@@ -257,7 +254,7 @@ hr {
 .menu2page__title {
 	font-family: 'Bree Serif', serif;
   font-size: $title-size;
-  background: -webkit-linear-gradient(#C77412, #9861EF);
+  background: -webkit-linear-gradient(left top, right bottom, from(#C77412), to(#9861EF));
   @include gradientcolors;
   background-color: $color-menu2;
 }
@@ -265,7 +262,7 @@ hr {
 .menu3page__title {
 	font-family: 'Dancing Script', cursive;
   font-size: $title-size;
-  background: -webkit-gradient(linear, left top, right bottom, from(#0431DF), to(#2B91F8));
+  background: -webkit-linear-gradient(left top, right bottom, from(#0431DF), to(#2B91F8));
   @include gradientcolors;
   background-color: $color-menu3;
   }
@@ -275,8 +272,7 @@ hr {
   font-size: $title-size;
   background: -webkit-linear-gradient(to right bottom, #42973C, #B7F97B);
   @include gradientcolors;
-  color: $color-txt4;
-  background-color: $color-menu4; 
+    background-color: $color-menu4; 
 }
 
 li {
