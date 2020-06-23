@@ -157,18 +157,18 @@ hr {
   margin: 8%;
   padding: 3.5%; }
 
-.menu1page ul {
+.menucarte--1 {
   color: #360000;
   background: #FCDFDB; }
 
-.menu2page ul {
+.menucarte--2 {
   color: #360000;
   background: #FFDDFC; }
 
-.menu3page ul {
+.menucarte--3 {
   background: #EFEFEF; }
 
-.menu4page ul {
+.menucarte--4 {
   background: #F2FFF2; }
 
 .menupage__title {
@@ -183,25 +183,43 @@ hr {
 .menu2page__title {
   font-family: 'Bree Serif', serif;
   font-size: 1.6rem;
-  background: -webkit-linear-gradient(to bottom right, #C77412, #9861EF);
-  background: -moz-linear-gradient(to bottom right, #C77412, #9861EF);
-  background: -o-linear-gradient(to bottom right, #C77412, #9861EF);
+  background: -webkit-linear-gradient(#C77412, #9861EF);
+  background: -moz-linear-gradient(#C77412, #9861EF);
+  background: -o-linear-gradient(#C77412, #9861EF);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
   background-color: #FFDDFC; }
 
 .menu3page__title {
   font-family: 'Dancing Script', cursive;
   font-size: 1.6rem;
-  background: -webkit-linear-gradient(to bottom right, #0431DF, #2B91F8);
+  background: -webkit-linear-gradient(#0431DF, #2B91F8);
+  background: -moz-linear-gradient(#0431DF, #2B91F8);
+  background: -o-linear-gradient(#0431DF, #2B91F8);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
   background-color: #EFEFEF; }
 
 .menu4page__title {
   font-family: 'Kaushan Script', cursive;
   font-size: 1.6rem;
-  background: -webkit-linear-gradient(to bottom right, #42973C, #B7F97B);
+  background: -webkit-linear-gradient(to right bottom, #42973C, #B7F97B);
+  background: -moz-linear-gradient(to right bottom, #42973C, #B7F97B);
+  background: -o-linear-gradient(to right bottom, #42973C, #B7F97B);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
   color: #4C9F42;
   background-color: #F2FFF2; }
 
@@ -215,8 +233,13 @@ li {
   width: 1.6rem;
   background: -o-linear-gradient(to bottom right, #C77412, #9861EF);
   background: -webkit-linear-gradient(to bottom right, #C77412, #9861EF);
+  background: -moz-linear-gradient(to bottom right, #C77412, #9861EF);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
   background-color: #FCDFDB; }
 
 .selector-for-some-widget {
