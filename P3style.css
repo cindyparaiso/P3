@@ -18,15 +18,13 @@ header {
   background: #579C87;
   text-align: center;
   padding: 2rem;
-  font-family: 'Montserrat', sans serif;
-  width: 100%; }
+  font-family: 'Montserrat', sans serif; }
 
 footer {
   background: #579C87;
   text-align: center;
   padding: 2rem;
   font-family: 'Montserrat', sans serif;
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -39,7 +37,7 @@ a {
 
 footer a {
   color: #FDCB46;
-  font-size: 0.7rem; }
+  font-size: 0.9rem; }
 
 .container {
   display: flex;
@@ -57,8 +55,8 @@ footer a {
   flex-direction: row; }
 
 .menu {
-  width: 20%;
-  height: 30%;
+  width: 50%;
+  height: auto;
   font-size: 1rem;
   cursor: pointer;
   overflow: hidden;
@@ -114,7 +112,7 @@ footer a {
   background: #579C87;
   color: #FDCB46;
   cursor: pointer;
-  width: 14%;
+  font-size: 0.9rem;
   padding: 0.85rem 0.7rem;
   border: none;
   border-radius: 1rem;
@@ -137,45 +135,44 @@ footer a {
 hr {
   display: flex;
   flex-direction: row;
-  align-items: space-around;
+  align-items: space-between;
   justify-content: center;
   text-align: center; }
 
 .hr h2 {
   color: inherit;
-  background: linear-gradient(to top, #C77412 0%, #C77412 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 10%, transparent 10.01%) no-repeat left bottom/0 100%;
   transition: background-size .3s; }
 
 .hr h2:hover {
   background-size: 100% 100%; }
 
 .menupage {
-  margin: 9%;
-  text-align: justify;
-  border-radius: 2rem;
   box-shadow: 0.2rem 0.4rem 0.4rem 0.2rem #D8D8D8;
-  font-family: 'Bad Script', cursive; }
+  border-radius: 1.6rem; }
 
 .menucarte {
-  padding: 5%; }
+  text-align: justify;
+  font-family: 'Bad Script', cursive;
+  margin: 8%;
+  padding: 3.5%; }
 
-.menu1page {
+.menu1page ul {
   color: #360000;
-  background: #FCDFDB;
-  padding: 5%; }
+  background: #FCDFDB; }
 
-.menu2page {
+.menu2page ul {
   color: #360000;
-  background: #FFDDFC;
-  padding: 5%; }
+  background: #FFDDFC; }
 
-.menu3page {
-  background: #EFEFEF;
-  padding: 5%; }
+.menu3page ul {
+  background: #EFEFEF; }
 
-.menu4page {
-  background: #F2FFF2;
-  padding: 5%; }
+.menu4page ul {
+  background: #F2FFF2; }
+
+.menupage__title {
+  text-align: center; }
 
 .menu1page__title {
   font-family: 'Devonshire', cursive;
@@ -186,7 +183,9 @@ hr {
 .menu2page__title {
   font-family: 'Bree Serif', serif;
   font-size: 1.6rem;
-  background: -webkit-linear-gradient(#C77412, #9861EF);
+  background: -webkit-linear-gradient(to bottom right, #C77412, #9861EF);
+  background: -moz-linear-gradient(to bottom right, #C77412, #9861EF);
+  background: -o-linear-gradient(to bottom right, #C77412, #9861EF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-color: #FFDDFC; }
@@ -194,12 +193,15 @@ hr {
 .menu3page__title {
   font-family: 'Dancing Script', cursive;
   font-size: 1.6rem;
-  color: #3D9FFA;
+  background: -webkit-linear-gradient(to bottom right, #0431DF, #2B91F8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-color: #EFEFEF; }
 
 .menu4page__title {
   font-family: 'Kaushan Script', cursive;
   font-size: 1.6rem;
+  background: -webkit-linear-gradient(to bottom right, #42973C, #B7F97B);
   color: #4C9F42;
   background-color: #F2FFF2; }
 
@@ -209,9 +211,13 @@ li {
   justify-content: space-between;
   font-size: 1.1rem; }
 
-.music i {
-  width: 27%;
-  height: auto; }
+.music svg {
+  width: 1.6rem;
+  background: -o-linear-gradient(to bottom right, #C77412, #9861EF);
+  background: -webkit-linear-gradient(to bottom right, #C77412, #9861EF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: #FCDFDB; }
 
 .selector-for-some-widget {
   box-sizing: content-box; }

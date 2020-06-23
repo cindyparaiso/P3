@@ -40,7 +40,6 @@ body {
 	text-align: center;
   padding: $form-size;
   font-family: 'Montserrat', sans serif;
-  width: 100%;
 }  
 
   
@@ -68,7 +67,7 @@ a {
 
 footer a {
   color: $color-txt; 
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }  
   
  .container {
@@ -87,19 +86,9 @@ footer a {
   @include box-position;
 }
 
-@mixin text-title {
-  text-align: center;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 400ms; 
-	  &:hover {
-	  transform: scale(1.15);
-	  }
-}
-
 .menu {
- width: 20%; 
- height: 30%;
+ width: 50%; 
+ height: auto;
  font-size: 1rem;
  cursor: pointer;
  overflow: hidden; 
@@ -179,7 +168,7 @@ footer a {
 	background: $color-bann;
 	color: $color-txt; 
   cursor: pointer;
-  width: 14%;  
+  font-size: 0.9rem;
   padding: 0.85rem 0.7rem;
   border: none;
   border-radius: 1rem;
@@ -212,14 +201,14 @@ footer a {
 
 hr {  
   @include box-position;
-  align-items: space-around;
+  align-items: space-between;
   justify-content: center;
   text-align: center;
 }
 
 .hr h2 {  
     color: inherit;
-    background: linear-gradient(to top, #C77412 0%, #C77412 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background: linear-gradient(to top, #FDCB46 0%, #FDCB46 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
     transition: background-size .3s;
 }
 
@@ -228,39 +217,38 @@ hr {
 }	
 
 .menupage {
-  margin: 9%;  
-  text-align: justify;
-  border-radius: $form-size;
   box-shadow: $color-shadow; 
-	font-family: 'Bad Script', cursive;
+  border-radius: $title-size;
 }
 
 .menucarte {
-  padding: 5%;
+  text-align: justify;
+  font-family: 'Bad Script', cursive;
+  margin: 8%; 
+  padding: 3.5%; 
 }
 
-.menu1page {
+.menu1page ul {
   color: $color-txt1;
   background: $color-menu1;
-  padding: 5%;
 }
 
-.menu2page {
+.menu2page ul {
   color: $color-txt1;
   background: $color-menu2;  
-  padding: 5%;
-  }
+ }
 
-.menu3page {
+.menu3page ul {
   background: $color-menu3;
-  padding: 5%;
-}
+ }
 
-.menu4page {
+.menu4page ul {
   background: $color-menu4;
-  padding: 5%;
-}
+ }
 
+.menupage__title {
+  text-align: center;
+}
 .menu1page__title {
 	font-family: 'Devonshire', cursive;
   font-size: $title-size;  
@@ -271,7 +259,9 @@ hr {
 .menu2page__title {
 	font-family: 'Bree Serif', serif;
   font-size: $title-size;
-  background: -webkit-linear-gradient(#C77412, #9861EF);
+  background: -webkit-linear-gradient(to bottom right,#C77412, #9861EF);
+  background: -moz-linear-gradient(to bottom right,#C77412, #9861EF);
+  background: -o-linear-gradient(to bottom right,#C77412, #9861EF);
   @include gradientcolors;
   background-color: $color-menu2;
 }
@@ -279,13 +269,15 @@ hr {
 .menu3page__title {
 	font-family: 'Dancing Script', cursive;
   font-size: $title-size;
-  color: $color-txt3;
+  background: -webkit-linear-gradient(to bottom right,#0431DF, #2B91F8);
+  @include gradientcolors;
   background-color: $color-menu3;
   }
 
 .menu4page__title {
 	font-family: 'Kaushan Script', cursive;
   font-size: $title-size;
+  background: -webkit-linear-gradient(to bottom right,#42973C, #B7F97B);
   color: $color-txt4;
   background-color: $color-menu4; 
 }
@@ -297,18 +289,21 @@ li {
 	font-size: 1.1rem;
 }
 
-.music i {  
-  width: 27%; 
-  height: auto;
+.music svg {  
+  width: $title-size;
+  background: -o-linear-gradient(to bottom right,#C77412, #9861EF);
+  background: -webkit-linear-gradient(to bottom right,#C77412, #9861EF);
+  @include gradientcolors;
+  background-color: $color-menu1;
 }
-
+ 
 .selector-for-some-widget
 {
 	box-sizing: content-box;
 }  
- @media all and (max-width: 768px)
-  {
-  
-  }  	
 
+@media all and (max-width: 768px)
+{
+  
+} 	
 	
