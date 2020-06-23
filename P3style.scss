@@ -1,7 +1,7 @@
 $color-btn: #011c37;
 $color-shadow: 0.2rem 0.4rem 0.4rem 0.2rem #D8D8D8;
 $color-txt: #FDCB46;
-$color-txt1: #3C1218; 
+$color-txt1: #360000; 
 $color-txt3: #3D9FFA;
 $color-txt4: #4C9F42;
 $color-menu1: #FCDFDB;
@@ -10,8 +10,9 @@ $color-menu3: #EFEFEF;
 $color-menu4: #F2FFF2;
 $color-bann: #579C87;
 $anim-dur: 1000ms;
-$cd-box: #360000;
 $form-size: 2rem;
+$title-size: 1.6rem;
+
 
 
 *,
@@ -39,6 +40,7 @@ body {
 	text-align: center;
   padding: $form-size;
   font-family: 'Montserrat', sans serif;
+  width: 100%;
 }  
 
   
@@ -66,6 +68,7 @@ a {
 
 footer a {
   color: $color-txt; 
+  font-size: 0.7rem;
 }  
   
  .container {
@@ -73,7 +76,7 @@ footer a {
   flex-direction: column;
   align-items: center;
 	justify-content: center;
-  margin-bottom: 18%;
+  margin-bottom: 5%;
 }
 
 .container1 {
@@ -82,14 +85,6 @@ footer a {
 
 .container2 {
   @include box-position;
-}
-
-@mixin text-body {
-	margin: $form-size;
-	text-align: justify;
-	margin: 9%;  
-	border-radius: 1px;
-	text-align: center;
 }
 
 @mixin text-title {
@@ -102,8 +97,9 @@ footer a {
 	  }
 }
 
-@mixin menu-btn-style {
+.menu {
  width: 20%; 
+ height: 30%;
  font-size: 1rem;
  cursor: pointer;
  overflow: hidden; 
@@ -113,12 +109,12 @@ footer a {
 }
 
 .menu__txt { 
+  text-align: center;
   width: 45%;
   height: auto;
   opacity: 1;
   filter: alpha(opacity=100);
   zoom: 1;
-  text-align: center;
 }
   
 .menu :hover .menu__txt {
@@ -129,52 +125,9 @@ footer a {
   zoom: 1;
 } 
 
-.menu__txt--1 {
-color:  ;
-font-family:;
-}
-
-.menu__txt--2 {
-  color:;
-  font-family:;
-}
-
 @mixin gradientcolors {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.menu1 {
-  color: $color-txt1;
-  background-color: $color-menu1;
-  @include menu-btn-style;
-}
-
-.menu__txt--colored {
-  background: -webkit-linear-gradient(#C77412, #9861EF);
-  @include gradientcolors;
-}
-
-.menu2 {
-  background-color:$color-menu2; 
-  @include menu-btn-style;
-}
-
-.menu3 {
-  color: $color-txt3; 
-  background-color: $color-menu3;
-  @include menu-btn-style;
-}
-
-.menu__txt--green {
-  font-family: 'Kaushan Script', cursive;
-  background: -webkit-linear-gradient(#69B852, #C8FE94);
-  @include gradientcolors;
-}
-
-.menu4 {
-  background-color: $color-menu4;
-  @include menu-btn-style;
 }
 
 .points {
@@ -221,6 +174,8 @@ font-family:;
 }
   
 .Prochainement {
+  width: 20%;
+  height: auto;
 	background: $color-bann;
 	color: $color-txt; 
   cursor: pointer;
@@ -255,48 +210,43 @@ font-family:;
   }
 }
 
-h2 {  
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 400ms; 
-	    &:hover {
-		  transform: scale(1.15);
-      } 
-    }
-
-.hr {  
+hr {  
   @include box-position;
   align-items: space-around;
   justify-content: center;
+  text-align: center;
 }
 
-.menupage__title {	
-	text-align: center;
-	font-size: 2em;
-	background: linear-gradient(to top, #C77412 0%, #C77412 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-  transition: background-size .3s;
+.hr h2 {  
+    color: inherit;
+    background: linear-gradient(to top, #C77412 0%, #C77412 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .3s;
 }
 
-.menupage__title:hover .menupage__title {	
-	background: 100% 100%;
+.hr h2:hover {	
+	background-size: 100% 100%;
 }	
 
 .menupage {
-	margin: 9%;  
+  margin: 9%;  
+  text-align: justify;
   border-radius: $form-size;
   box-shadow: $color-shadow; 
-	text-align: center;
 	font-family: 'Bad Script', cursive;
 }
 
+.menucarte {
+  padding: 5%;
+}
+
 .menu1page {
-  color: $cd-txt1;
+  color: $color-txt1;
   background: $color-menu1;
   padding: 5%;
 }
 
 .menu2page {
-  color: $cd-txt1;
+  color: $color-txt1;
   background: $color-menu2;  
   padding: 5%;
   }
@@ -313,14 +263,14 @@ h2 {
 
 .menu1page__title {
 	font-family: 'Devonshire', cursive;
-  font-size: $form-size;  
-  color: $cd-txt1;
+  font-size: $title-size;  
+  color: $color-txt1;
   background-color: $color-menu1;
 }
 
 .menu2page__title {
 	font-family: 'Bree Serif', serif;
-  font-size: $form-size;
+  font-size: $title-size;
   background: -webkit-linear-gradient(#C77412, #9861EF);
   @include gradientcolors;
   background-color: $color-menu2;
@@ -328,14 +278,14 @@ h2 {
 
 .menu3page__title {
 	font-family: 'Dancing Script', cursive;
-  font-size: $form-size;
+  font-size: $title-size;
   color: $color-txt3;
   background-color: $color-menu3;
   }
 
 .menu4page__title {
 	font-family: 'Kaushan Script', cursive;
-  font-size: $form-size;
+  font-size: $title-size;
   color: $color-txt4;
   background-color: $color-menu4; 
 }
@@ -347,16 +297,9 @@ li {
 	font-size: 1.1rem;
 }
 
-img {  
+.music i {  
   width: 27%; 
   height: auto;
-  float: center;
-}
-
-i {
-  color: transparent; 
-  background: linear-gradient(70deg, #F05861,#F6916A);
-  -webkit-background-clip: text;
 }
 
 .selector-for-some-widget
