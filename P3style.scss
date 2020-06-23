@@ -39,7 +39,7 @@ body {
 	background: $color-bann;
 	text-align: center;
   font-family: 'Montserrat', sans serif;
-  height: 27%;
+  height: 18%;
  }  
 
   
@@ -67,7 +67,7 @@ a {
 
 footer a {
   color: $color-txt; 
-  font-size: 0.9rem;
+  font-size: $form-size;
 }  
   
  .container {
@@ -116,11 +116,7 @@ footer a {
 
 @mixin gradientcolors {
   -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -o-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  -o-text-fill-color: transparent;
 }
 
 .points {
@@ -206,6 +202,7 @@ footer a {
 hr {  
   @include box-position;
   align-items: center;
+  justify-items: center;
   text-align: center;
 }
 
@@ -261,8 +258,6 @@ hr {
 	font-family: 'Bree Serif', serif;
   font-size: $title-size;
   background: -webkit-linear-gradient(#C77412, #9861EF);
-  background: -moz-linear-gradient(#C77412, #9861EF);
-  background: -o-linear-gradient(#C77412, #9861EF);
   @include gradientcolors;
   background-color: $color-menu2;
 }
@@ -271,8 +266,6 @@ hr {
 	font-family: 'Dancing Script', cursive;
   font-size: $title-size;
   background: -webkit-gradient(linear, left top, right bottom, from(#0431DF), to(#2B91F8));
-  background: -moz-linear-gradient(#0431DF, #2B91F8);
-  background: -o-linear-gradient(#0431DF, #2B91F8);
   @include gradientcolors;
   background-color: $color-menu3;
   }
@@ -281,8 +274,6 @@ hr {
 	font-family: 'Kaushan Script', cursive;
   font-size: $title-size;
   background: -webkit-linear-gradient(to right bottom, #42973C, #B7F97B);
-  background: -moz-linear-gradient(to right bottom, #42973C, #B7F97B);
-  background: -o-linear-gradient(to right bottom, #42973C, #B7F97B);
   @include gradientcolors;
   color: $color-txt4;
   background-color: $color-menu4; 

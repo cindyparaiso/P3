@@ -18,13 +18,13 @@ header {
   background: #579C87;
   text-align: center;
   font-family: 'Montserrat', sans serif;
-  height: 27%; }
+  height: 18%; }
 
 footer {
   background: #579C87;
   text-align: center;
   font-family: 'Montserrat', sans serif;
-  height: 27%;
+  height: 18%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -37,7 +37,7 @@ a {
 
 footer a {
   color: #FDCB46;
-  font-size: 0.9rem; }
+  font-size: 2rem; }
 
 .container {
   display: flex;
@@ -132,18 +132,19 @@ footer a {
     transform: translate3d(-4px, 0, 0); }
   40%, 60% {
     transform: translate3d(4px, 0, 0); } }
+
 hr {
   display: flex;
   flex-direction: row;
   align-items: center;
   text-align: center; }
 
-.hr h2 {
+.hr span {
   color: inherit;
   background: linear-gradient(to top, #FDCB46 0%, #FDCB46 10%, transparent 10.01%) no-repeat left bottom/0 100%;
   transition: background-size .3s; }
 
-.hr h2:hover {
+.hr span:hover {
   background-size: 100% 100%; }
 
 .menupage {
@@ -181,42 +182,24 @@ hr {
   font-family: 'Bree Serif', serif;
   font-size: 1.6rem;
   background: -webkit-linear-gradient(#C77412, #9861EF);
-  background: -moz-linear-gradient(#C77412, #9861EF);
-  background: -o-linear-gradient(#C77412, #9861EF);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -o-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  -o-text-fill-color: transparent;
   background-color: #FFDDFC; }
 
 .menu3page__title {
   font-family: 'Dancing Script', cursive;
   font-size: 1.6rem;
   background: -webkit-gradient(linear, left top, right bottom, from(#0431DF), to(#2B91F8));
-  background: -moz-linear-gradient(#0431DF, #2B91F8);
-  background: -o-linear-gradient(#0431DF, #2B91F8);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -o-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  -o-text-fill-color: transparent;
   background-color: #EFEFEF; }
 
 .menu4page__title {
   font-family: 'Kaushan Script', cursive;
   font-size: 1.6rem;
   background: -webkit-linear-gradient(to right bottom, #42973C, #B7F97B);
-  background: -moz-linear-gradient(to right bottom, #42973C, #B7F97B);
-  background: -o-linear-gradient(to right bottom, #42973C, #B7F97B);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -o-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  -o-text-fill-color: transparent;
   color: #4C9F42;
   background-color: #F2FFF2; }
 
@@ -232,11 +215,7 @@ li {
   background: -webkit-linear-gradient(to bottom right, #C77412, #9861EF);
   background: -moz-linear-gradient(to bottom right, #C77412, #9861EF);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -o-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  -o-text-fill-color: transparent;
   background-color: #FCDFDB; }
 
 img {
