@@ -57,7 +57,6 @@ footer {
   @include box-position;
   justify-content: space-around;
   padding: 2%;
-  margin: 2%;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -256,25 +255,21 @@ hr {
 .menu2page__title {
 	font-family: 'Bree Serif', serif;
   font-size: $title-size;
-  background: -webkit-linear-gradient(left top, right bottom, from(#C77412), to(#9861EF));
+  background: -webkit-linear-gradient(#C77412,#9861EF);
   @include gradientcolors;
-  background-color: $color-menu2;
+  background: $color-menu2;
 }
 
 .menu3page__title {
 	font-family: 'Dancing Script', cursive;
   font-size: $title-size;
-  background: -webkit-linear-gradient(left top, right bottom, from(#0431DF), to(#2B91F8));
-  @include gradientcolors;
-  background-color: $color-menu3;
+  background: $color-menu3;
   }
 
 .menu4page__title {
 	font-family: 'Kaushan Script', cursive;
   font-size: $title-size;
-  background: -webkit-linear-gradient(to right bottom, #42973C, #B7F97B);
-  @include gradientcolors;
-    background-color: $color-menu4; 
+  background: $color-menu4; 
 }
 
 li {
@@ -293,8 +288,8 @@ li {
   background-color: $color-menu1;
 }
 
-img {
-  width: 25%;
+header img {
+  width: 20%;
   height: auto;
   float: center;
 }
