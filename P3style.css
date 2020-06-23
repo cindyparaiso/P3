@@ -1,224 +1,80 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
+/*
+Error: Invalid CSS after "line fill:": expected pseudoclass or pseudoelement, was " "none" stroke-..."
+        on line 303 of P3style.scss
 
-html {
-  height: 100%; }
+298:   height: auto;
+299:   float: center;
+300: }
+301: 
+302: .layerP1 {
+303:   line fill: "none" stroke-width:"5" stroke-dasharray:"null" stroke-linejoin:"null" stroke-linecap:"null" x1:"2.5" y1:"2.5" x2:"17.5" y2:"2.5" id:"svg_2" stroke:"null" {
+304:   line fill:"none" stroke-width:"5" stroke-dasharray:"null" stroke-linejoin:"null" stroke-linecap:"null" x1:"24.5" y1:"72.5" x2:"281.49998" y2:"64.5" id:"svg_5" stroke:"#3d1319" { 
+305:   line fill:"none" stroke-width:"5" stroke-dasharray:"null" stroke-linejoin:"null" stroke-linecap:"null" x1:"29.49999" y1:"67.5" x2:"297.5" y2:"66.5" id:"svg_6" stroke:"#3d1319" {
+306:   polyline fill:"none" stroke-width:"5" stroke-dasharray:"null" stroke-linejoin:"null" stroke-linecap:"round" opacity:"0.5" points:"32.5,46.5 " id:"svg_3" stroke:"#3d1319" {
+307:   path fill:"none" stroke:"#3d1319" stroke-width:"2" stroke-dasharray:"null" stroke-linejoin:"null" stroke-linecap:"null" id="svg_21" d="m293.5,63.5c-1.70001,0 -2.60001,0 -3.5,0c-0.89999,0 -1.79999,0 -2.70132,0c-0.96533,0 -1.79868,0 -2.77716,0c-0.82019,0 -1.6575,0 -2.50552,0c-0.86331,0 -1.86932,-0.02133 -2.43198,-0.56799l-0.16803,-0.86401" {
+308: } 			
 
-body {
-  box-sizing: border-box;
-  background: #fff;
-  text-align: center;
-  margin: 0; }
-
-header {
-  background: #579C87;
-  text-align: center;
-  font-family: 'Montserrat', sans serif;
-  height: 16%; }
-
-footer {
-  background: #579C87;
-  text-align: center;
-  font-family: 'Montserrat', sans serif;
-  height: 16%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  position: fixed;
-  bottom: 0; }
-
-a {
-  text-decoration: none; }
-
-footer a {
-  color: #FDCB46;
-  font-size: 1.1rem; }
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 5%; }
-
-.container1 {
-  display: flex;
-  flex-direction: row; }
-
-.container2 {
-  display: flex;
-  flex-direction: row; }
-
-.menu {
-  width: 50%;
-  height: auto;
-  font-size: 1rem;
-  cursor: pointer;
-  overflow: hidden;
-  padding: 5rem 1.3rem;
-  margin: 0.9rem 0.9rem;
-  box-shadow: 0.2rem 0.4rem 0.4rem 0.2rem #D8D8D8; }
-
-.menu__txt {
-  width: 50%;
-  height: auto;
-  opacity: 1;
-  filter: alpha(opacity=100); }
-
-.menu :hover .menu__txt {
-  transform: scale(1.4);
-  transform-origin: center;
-  opacity: 0.85;
-  filter: alpha(opacity=85); }
-
-.points {
-  font-size: 2rem; }
-
-.point--1 {
-  animation: point1 1000ms backwards infinite ease-in-out alternate; }
-
-.point--2 {
-  animation: point2 1000ms backwards infinite ease-in-out alternate; }
-
-.point--3 {
-  animation: point3 1000ms backwards infinite ease-in-out alternate; }
-
-@keyframes point1 {
-  0% {
-    opacity: 1; }
-  33% {
-    opacity: 0; } }
-@keyframes point2 {
-  34% {
-    opacity: 1; }
-  65% {
-    opacity: 0; } }
-@keyframes point3 {
-  67% {
-    opacity: 1; }
-  99% {
-    opacity: 0; } }
-.Prochainement {
-  width: 20%;
-  height: auto;
-  background: #579C87;
-  color: #FDCB46;
-  cursor: pointer;
-  font-size: 0.9rem;
-  padding: 0.85rem 0.7rem;
-  border: none;
-  border-radius: 1rem;
-  margin: 2rem; }
-
-.footer__wiggle:hover {
-  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-  transform: translate3d(0, 0, 0);
-  perspective: 1000px; }
-
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0); }
-  20%, 80% {
-    transform: translate3d(2px, 0, 0); }
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0); }
-  40%, 60% {
-    transform: translate3d(4px, 0, 0); } }
-hr {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-items: center; }
-
-.hr h2 {
-  color: inherit;
-  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  transition: background-size .3s; }
-
-.hr h2:hover {
-  background-size: 100% 100%; }
-
-.menupage {
-  box-shadow: 0.2rem 0.4rem 0.4rem 0.2rem #D8D8D8;
-  border-radius: 1.6rem;
-  margin: 8%; }
-
-.menucarte {
-  text-align: justify;
-  font-family: 'Bad Script', cursive;
-  padding: 3.5%; }
-
-.menu1page {
-  color: #360000;
-  background: #FCDFDB; }
-
-.menu2page {
-  color: #360000;
-  background: #FFDDFC; }
-
-.menu3page {
-  background: #EFEFEF; }
-
-.menu4page {
-  background: #F2FFF2; }
-
-.menupage__title {
-  text-align: center; }
-
-.menu1page__title {
-  font-family: 'Devonshire', cursive;
-  font-size: 1.6rem; }
-
-.menu2page__title {
-  font-family: 'Bree Serif', serif;
-  font-size: 1.6rem;
-  background: -webkit-linear-gradient(left top, right bottom, from(#C77412), to(#9861EF));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-color: #FFDDFC; }
-
-.menu3page__title {
-  font-family: 'Dancing Script', cursive;
-  font-size: 1.6rem;
-  background: -webkit-linear-gradient(left top, right bottom, from(#0431DF), to(#2B91F8));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-color: #EFEFEF; }
-
-.menu4page__title {
-  font-family: 'Kaushan Script', cursive;
-  font-size: 1.6rem;
-  background: -webkit-linear-gradient(to right bottom, #42973C, #B7F97B);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-color: #F2FFF2; }
-
-li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 1.1rem; }
-
-.music svg {
-  width: 1.6rem;
-  background: -o-linear-gradient(to bottom right, #C77412, #9861EF);
-  background: -webkit-linear-gradient(to bottom right, #C77412, #9861EF);
-  background: -moz-linear-gradient(to bottom right, #C77412, #9861EF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-color: #FCDFDB; }
-
-img {
-  width: 25%;
-  height: auto;
-  float: center; }
-
-.selector-for-some-widget {
-  box-sizing: content-box; }
-
-/*# sourceMappingURL=P3style.css.map */
+Backtrace:
+P3style.scss:303
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1097:in `ident!'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:282:in `pseudo'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:163:in `simple_selector_sequence'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:115:in `selector'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:83:in `selector_comma_sequence'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1216:in `expr!'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:20:in `parse_selector'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:434:in `visit_rule'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"line fill:\": expected pseudoclass or pseudoelement, was \" \"none\" stroke-...\"\A         on line 303 of P3style.scss\A \A 298:   height: auto;\A 299:   float: center;\A 300: }\A 301: \A 302: .layerP1 {\A 303:   line fill: \"none\" stroke-width:\"5\" stroke-dasharray:\"null\" stroke-linejoin:\"null\" stroke-linecap:\"null\" x1:\"2.5\" y1:\"2.5\" x2:\"17.5\" y2:\"2.5\" id:\"svg_2\" stroke:\"null\" {\A 304:   line fill:\"none\" stroke-width:\"5\" stroke-dasharray:\"null\" stroke-linejoin:\"null\" stroke-linecap:\"null\" x1:\"24.5\" y1:\"72.5\" x2:\"281.49998\" y2:\"64.5\" id:\"svg_5\" stroke:\"#3d1319\" { \A 305:   line fill:\"none\" stroke-width:\"5\" stroke-dasharray:\"null\" stroke-linejoin:\"null\" stroke-linecap:\"null\" x1:\"29.49999\" y1:\"67.5\" x2:\"297.5\" y2:\"66.5\" id:\"svg_6\" stroke:\"#3d1319\" {\A 306:   polyline fill:\"none\" stroke-width:\"5\" stroke-dasharray:\"null\" stroke-linejoin:\"null\" stroke-linecap:\"round\" opacity:\"0.5\" points:\"32.5,46.5 \" id:\"svg_3\" stroke:\"#3d1319\" {\A 307:   path fill:\"none\" stroke:\"#3d1319\" stroke-width:\"2\" stroke-dasharray:\"null\" stroke-linejoin:\"null\" stroke-linecap:\"null\" id=\"svg_21\" d=\"m293.5,63.5c-1.70001,0 -2.60001,0 -3.5,0c-0.89999,0 -1.79999,0 -2.70132,0c-0.96533,0 -1.79868,0 -2.77716,0c-0.82019,0 -1.6575,0 -2.50552,0c-0.86331,0 -1.86932,-0.02133 -2.43198,-0.56799l-0.16803,-0.86401\" {\A 308: } 			"; }

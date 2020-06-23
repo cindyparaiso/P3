@@ -39,8 +39,8 @@ body {
 	background: $color-bann;
 	text-align: center;
   font-family: 'Montserrat', sans serif;
-  height: 16%;
- }  
+  height: 14%;
+}  
 
   
 @mixin box-position {
@@ -55,7 +55,9 @@ header {
 footer {
   @include graphic-design;
   @include box-position;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 2%;
+  margin: 2%;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -67,7 +69,7 @@ a {
 
 footer a {
   color: $color-txt; 
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }  
   
  .container {
@@ -75,7 +77,7 @@ footer a {
   flex-direction: column;
   align-items: center;
 	justify-content: center;
-  margin-bottom: 5%;
+  margin-bottom: 7%;
 }
 
 .container1 {
@@ -100,15 +102,15 @@ footer a {
 .menu__txt { 
   width: 50%;
   height: auto;
-  opacity: 1;
-  filter: alpha(opacity=100);
+  opacity: 0.2;
+  filter: alpha(opacity=20);
  }
   
 .menu :hover .menu__txt {
   transform: scale(1.4);
   transform-origin: center; 
-  opacity: 0.85;
-  filter: alpha(opacity=85);
+  opacity: 0.1;
+  filter: alpha(opacity=10);
  } 
 
 @mixin gradientcolors {
@@ -180,19 +182,19 @@ footer a {
 
 @keyframes shake {
   10%, 90% {
-    transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-2px, 0, 0);
   }
   
   20%, 80% {
-    transform: translate3d(2px, 0, 0);
+    transform: translate3d(4px, 0, 0);
   }
 
   30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
+    transform: translate3d(-8px, 0, 0);
   }
 
   40%, 60% {
-    transform: translate3d(4px, 0, 0);
+    transform: translate3d(8px, 0, 0);
   }
 }
 
@@ -296,14 +298,16 @@ img {
   height: auto;
   float: center;
 }
- 
-.selector-for-some-widget
-{
-	box-sizing: content-box;
-}  
 
-@media all and (max-width: 768px)
-{
-  
-} 	
-	
+.layerP1 {
+  line fill: "none" stroke-width:"5" stroke-dasharray:"null" stroke-linejoin:"null" stroke-linecap:"null" x1:"2.5" y1:"2.5" x2:"17.5" y2:"2.5" id:"svg_2" stroke:"null" {
+  line fill:"none" stroke-width:"5" stroke-dasharray:"null" stroke-linejoin:"null" stroke-linecap:"null" x1:"24.5" y1:"72.5" x2:"281.49998" y2:"64.5" id:"svg_5" stroke:"#3d1319" { 
+  line fill:"none" stroke-width:"5" stroke-dasharray:"null" stroke-linejoin:"null" stroke-linecap:"null" x1:"29.49999" y1:"67.5" x2:"297.5" y2:"66.5" id:"svg_6" stroke:"#3d1319" {
+  polyline fill:"none" stroke-width:"5" stroke-dasharray:"null" stroke-linejoin:"null" stroke-linecap:"round" opacity:"0.5" points:"32.5,46.5 " id:"svg_3" stroke:"#3d1319" {
+  path fill:"none" stroke:"#3d1319" stroke-width:"2" stroke-dasharray:"null" stroke-linejoin:"null" stroke-linecap:"null" id="svg_21" d="m293.5,63.5c-1.70001,0 -2.60001,0 -3.5,0c-0.89999,0 -1.79999,0 -2.70132,0c-0.96533,0 -1.79868,0 -2.77716,0c-0.82019,0 -1.6575,0 -2.50552,0c-0.86331,0 -1.86932,-0.02133 -2.43198,-0.56799l-0.16803,-0.86401" {
+} 			
+  }
+}
+  }
+}
+}	
