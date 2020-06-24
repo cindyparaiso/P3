@@ -205,12 +205,12 @@ hr {
 
 .hr h2 {  
     color: inherit;
-    background: linear-gradient(to top, #FDCB46 0%, #FDCB46 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background: linear-gradient(to top, #FDCB46 0%, #FDCB46 10%, transparent 10.01%) no-repeat left bottom / 0 20%;
     transition: background-size .3s;
 }
 
 .hr h2:hover {	
-	background-size: 100% 100%;
+	background-size: 20% 20%;
 }	
 
 .menupage {
@@ -250,26 +250,27 @@ hr {
 .menu1page__title {
 	font-family: 'Devonshire', cursive;
   font-size: $title-size;  
- }
+  background-color: $color-menu2;  
+}
 
 .menu2page__title {
 	font-family: 'Bree Serif', serif;
   font-size: $title-size;
   background: -webkit-linear-gradient(#C77412,#9861EF);
   @include gradientcolors;
-  background: $color-menu2;
+  background-color: $color-menu2;
 }
 
 .menu3page__title {
 	font-family: 'Dancing Script', cursive;
   font-size: $title-size;
-  background: $color-menu3;
+  background-color: $color-menu3;
   }
 
 .menu4page__title {
 	font-family: 'Kaushan Script', cursive;
   font-size: $title-size;
-  background: $color-menu4; 
+  background-color: $color-menu4; 
 }
 
 li {
@@ -280,10 +281,8 @@ li {
 }
 
 .music svg {  
-  width: $title-size;
-  background: -o-linear-gradient(to bottom right,#C77412, #9861EF);
+  width: $form-size;
   background: -webkit-linear-gradient(to bottom right,#C77412, #9861EF);
-  background: -moz-linear-gradient(to bottom right,#C77412, #9861EF);
   @include gradientcolors;
   background-color: $color-menu1;
 }
