@@ -198,12 +198,12 @@ hr {
 
 .hr h2 {  
     color: inherit;
-    background: linear-gradient(to top, $color-txt 0%, $color-txt 13%, transparent 13,01%) no-repeat left bottom / 0 100%;
+    background: linear-gradient(to top, $color-txt 0%, $color-txt 10%, transparent 10,01%) no-repeat left bottom / 0 100%;
     transition: background-size .3s;
 }
 
 .hr h2:hover {	
-	background-size: 36% 100%;
+	background-size: 25% 100%;
 }	
 
 .menupage {
@@ -275,7 +275,7 @@ li {
 
 .music svg {  
   width: $form-size;
-  background: -webkit-linear-gradient(to bottom right,#C77412, #9861EF);
+  background: -webkit-linear-gradient(#C77412, #9861EF);
   @include gradientcolors;
   background-color: $color-menu1;
 }

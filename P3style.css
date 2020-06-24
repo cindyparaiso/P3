@@ -133,11 +133,11 @@ hr {
 
 .hr h2 {
   color: inherit;
-  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 13%, transparent 13, 1%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 10%, transparent 10, 1%) no-repeat left bottom/0 100%;
   transition: background-size .3s; }
 
 .hr h2:hover {
-  background-size: 36% 100%; }
+  background-size: 25% 100%; }
 
 .menupage {
   box-shadow: 0.2rem 0.4rem 0.4rem 0.2rem #D8D8D8;
@@ -197,7 +197,7 @@ li {
 
 .music svg {
   width: 2rem;
-  background: -webkit-linear-gradient(to bottom right, #C77412, #9861EF);
+  background: -webkit-linear-gradient(#C77412, #9861EF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-color: #FCDFDB; }
