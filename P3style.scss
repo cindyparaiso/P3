@@ -160,7 +160,7 @@ footer a {
 	background: $color-bann;
 	color: $color-txt; 
   cursor: pointer;
-  font-size: $title-size;
+  font-size: 1.3rem;
   padding: 0.85rem 0.7rem;
   border-radius: 1rem;
 	margin: $form-size;
@@ -174,36 +174,36 @@ footer a {
 
 @keyframes shake {
   10%, 90% {
-    transform: translate3d(-2px, -2px, 0);
+    transform: translate3d(-2px, -7px, -11px);
   }
   
   20%, 80% {
-    transform: translate3d(4px, 2px, 3px);
+    transform: translate3d(4px, 4px, 3px);
   }
 
   30%, 50%, 70% {
-    transform: translate3d(-8px, -4px, 9px);
+    transform: translate3d(-8px, -10px, -9px);
   }
 
   40%, 60% {
-    transform: translate3d(8px, 4px, 0);
+    transform: translate3d(8px, 6px, 9px);
   }
 }
 
 hr {  
   @include box-position;
-  align-content: center;
-  justify-items: center;
+  align-items: space-between;
+  justify-content: center;
 }
 
 .hr h2 {  
     color: inherit;
-    background: linear-gradient(to top, $color-txt 0%, $color-txt 13%, transparent 13,01%) no-repeat left bottom / 0 20%;
+    background: linear-gradient(to top, $color-txt 0%, $color-txt 13%, transparent 13,01%) no-repeat left bottom / 0 100%;
     transition: background-size .3s;
 }
 
 .hr h2:hover {	
-	background-size: 40% 100%;
+	background-size: 36% 100%;
 }	
 
 .menupage {
@@ -249,7 +249,7 @@ hr {
 
 .menu2page__title {
 	font-family: 'Bree Serif', serif;
-  background: -webkit-linear-gradient(to bottom right, #C77412,#9861EF);
+  background: -webkit-linear-gradient(#C77412,#9861EF);
   @include gradientcolors;
   background-color: $color-menu2;
 }
@@ -299,7 +299,7 @@ header img {
   .menupage {
     margin: 3.5%;
     padding: 1.5%;
-    margin-bottom: 13%;
+    margin-bottom: 18%;
   }
   .menucarte {
     padding: 2%;
