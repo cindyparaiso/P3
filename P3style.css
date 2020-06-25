@@ -174,9 +174,12 @@ footer a {
 
 .menu2page__title {
   font-family: 'Bree Serif', serif;
-  background: -webkit-linear-gradient(#C77412, #9861EF);
+  background-color: -webkit-linear-gradient(#c77412, #9861ef);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
+
+.menu2 {
+  background-color: #FFDDFC; }
 
 .menu3page__title {
   font-family: 'Dancing Script', cursive;

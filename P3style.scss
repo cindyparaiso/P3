@@ -248,9 +248,13 @@ footer a {
  }
 
 .menu2page__title {
-	font-family: 'Bree Serif', serif;
-  background: -webkit-linear-gradient(#C77412,#9861EF);
+  font-family: 'Bree Serif', serif;
+  background-color: -webkit-linear-gradient(rgb(199,116,18),rgb(152,97,239));
   @include gradientcolors;
+}
+
+.menu2 {
+  background-color:$color-menu2; 
 }
 
 .menu3page__title {
