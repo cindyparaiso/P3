@@ -144,7 +144,6 @@ footer a {
 
 .menupage {
   box-shadow: 0.2rem 0.4rem 0.4rem 0.2rem #D8D8D8;
-  border-radius: 1.6rem;
   margin: 9%; }
 
 .menucarte {
@@ -176,7 +175,7 @@ footer a {
 
 .menupage__title {
   text-align: center;
-  font-size: 2.9rem; }
+  font-size: 3.6rem; }
 
 .menu1page__title {
   font-family: 'Devonshire', cursive;
@@ -232,6 +231,18 @@ li {
 
 .dessert svg {
   color: #9861EF; }
+
+h1 i {
+  background: -webkit-linear-gradient(#C77412, #9861EF);
+  background: -moz-linear-gradient(#C77412, #9861EF);
+  background: -o-linear-gradient(#C77412, #9861EF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -o-background-clip: text;
+  -o-text-fill-color: transparent;
+  background-color: #FFDDFC; }
 
 header img {
   width: 29%;

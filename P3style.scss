@@ -214,8 +214,7 @@ footer a {
 } 
 
 .menupage {
-  box-shadow: $color-shadow; 
-  border-radius: $title-size;
+  box-shadow: $color-shadow;
   margin: 9%; 
 }
 
@@ -256,7 +255,7 @@ footer a {
 
 .menupage__title {
   text-align: center;
-  font-size: 2.9rem;
+  font-size: 3.6rem;
 }
 
 .menu1page__title {
@@ -304,6 +303,14 @@ li {
 }
 .dessert svg {  
   color: #9861EF;
+}
+
+h1 i {
+  background: -webkit-linear-gradient(#C77412,#9861EF);
+  background: -moz-linear-gradient(#C77412,#9861EF);
+  background: -o-linear-gradient(#C77412,#9861EF);
+  @include gradientcolors;
+  background-color:$color-menu2; 
 }
 
 header img {
