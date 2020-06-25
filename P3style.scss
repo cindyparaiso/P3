@@ -87,11 +87,11 @@ footer a {
 
 .menu-btn {
  width: 95%; 
- height: 13.5rem;
+ height: 15.5rem;
  font-size: 1rem;
  cursor: pointer;
  overflow: hidden; 
- padding: 1.4rem 0.4rem;
+ padding: 6.3rem 1.8rem;
  margin: 0.9rem 0.9rem; 
  box-shadow: $color-shadow; 
 }
@@ -203,10 +203,14 @@ footer a {
   justify-content: center;
 }
 
+.hr h2 {  
+  color: inherit;
+  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 50%, transparent 50,01%) no-repeat left bottom / 0 100%;
+  transition: background-size .5s;
+}
 .hr h2 {
   background-size: 0% 100%;
-  color: #FDCB46;
-  }
+}
 
 .hr h2:hover {
   animation: underline 5s both;
@@ -215,12 +219,16 @@ footer a {
 @keyframes underline {
 from {
   background-size: 0% 100%;
+  background-position: bottom left;
 }
 50% {
   background-size: 100% 100%;
+  background-position: bottom right;
+
 }
 100% {
   background-size: 0% 100%;
+  background-position: bottom right;
 }
 } 
 
