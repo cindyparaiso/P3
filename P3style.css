@@ -57,6 +57,7 @@ footer a {
 
 .menu-btn {
   width: 95%;
+  height: 14rem;
   font-size: 1rem;
   cursor: pointer;
   overflow: hidden;
@@ -70,7 +71,7 @@ footer a {
   filter: alpha(opacity=100); }
 
 .menu-btn :hover .menu__txt {
-  transform: scale(1.8);
+  transform: scale(1.6);
   transform-origin: center;
   opacity: 0.85;
   filter: alpha(opacity=85); }
@@ -103,7 +104,7 @@ footer a {
   99% {
     opacity: 0; } }
 .Prochainement {
-  width: 230px;
+  width: 11rem;
   height: auto;
   background: #579C87;
   color: #FDCB46;
@@ -175,7 +176,7 @@ footer a {
 
 .menupage__title {
   text-align: center;
-  font-size: 7rem; }
+  font-size: 9rem; }
 
 .menu1page__title {
   font-family: 'Devonshire', cursive; }

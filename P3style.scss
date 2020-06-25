@@ -87,6 +87,7 @@ footer a {
 
 .menu-btn {
  width: 95%; 
+ height: 14rem;
  font-size: 1rem;
  cursor: pointer;
  overflow: hidden; 
@@ -102,7 +103,7 @@ footer a {
  }
   
 .menu-btn :hover .menu__txt {
-  transform: scale(1.8);
+  transform: scale(1.6);
   transform-origin: center; 
   opacity: 0.85;
   filter: alpha(opacity=85);
@@ -161,7 +162,7 @@ footer a {
 }
   
 .Prochainement {
-  width: 230px;
+  width: 11rem;
   height: auto;
 	background: $color-bann;
 	color: $color-txt; 
@@ -255,7 +256,7 @@ footer a {
 
 .menupage__title {
   text-align: center;
-  font-size: 7rem;
+  font-size: 9rem;
 }
 
 .menu1page__title {
