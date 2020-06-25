@@ -174,7 +174,7 @@ footer a {
 
 .menu2page__title {
   font-family: 'Bree Serif', serif;
-  background-color: -webkit-linear-gradient(#c77412, #9861ef);
+  background: -webkit-linear-gradient(#c77412, #9861ef);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
