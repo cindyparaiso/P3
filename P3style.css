@@ -58,15 +58,15 @@ footer a {
 .menu-btn {
   width: 95%;
   height: 15.5rem;
-  font-size: 1rem;
+  font-size: 0.95rem;
   cursor: pointer;
   overflow: hidden;
-  padding: 5.9rem 1.8rem;
+  padding: 5.6rem 1.8rem;
   margin: 0.9rem 0.9rem;
   box-shadow: 0.2rem 0.4rem 0.4rem 0.2rem #D8D8D8; }
 
 .menu__txt {
-  width: 85%;
+  width: 92%;
   opacity: 1;
   filter: alpha(opacity=100); }
 
@@ -112,7 +112,7 @@ footer a {
   font-size: 1.2rem;
   padding: 0.7rem 0.65rem;
   border-radius: 1rem;
-  margin: 2rem; }
+  margin: 4rem; }
 
 .footer__wiggle:hover {
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
@@ -136,18 +136,21 @@ footer a {
 
 .hr h2 {
   color: inherit;
-  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 80%, transparent 80, 1%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 10%, transparent 10, 1%) no-repeat left bottom/0 100%;
   transition: background-size .5s; }
 
 .hr h2:hover {
   animation: underline 5s both; }
 
 @keyframes underline {
-  from {
-    background-size: 0% 100%;
+  0% {
+    background-size: 0% 100%; }
+  1% {
+    background-size: 100% 100%;
     background-position: bottom left; }
-  20% {
-    background-size: 100% 100%; }
+  50% {
+    background-size: 100% 100%;
+    background-position: bottom right; }
   100% {
     background-size: 0% 100%;
     background-position: bottom right; } }
@@ -185,7 +188,7 @@ footer a {
 
 .menupage__title {
   text-align: center;
-  font-size: 9rem; }
+  font-size: 5rem; }
 
 .menu1page__title {
   font-family: 'Devonshire', cursive; }
@@ -258,7 +261,7 @@ header img {
     padding: 1.5%;
     margin-bottom: 27%; }
 
-  .menucarte h1 {
+  .menupage__title {
     font-size: 2rem; }
 
   .menucarte h2 {

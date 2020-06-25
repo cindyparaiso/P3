@@ -88,16 +88,16 @@ footer a {
 .menu-btn {
  width: 95%; 
  height: 15.5rem;
- font-size: 1rem;
+ font-size: 0.95rem;
  cursor: pointer;
  overflow: hidden; 
- padding: 5.9rem 1.8rem;
+ padding: 5.6rem 1.8rem;
  margin: 0.9rem 0.9rem; 
  box-shadow: $color-shadow; 
 }
 
 .menu__txt { 
-  width: 85%;
+  width: 92%;
   opacity: 1;
   filter: alpha(opacity=100); 
  }
@@ -170,7 +170,7 @@ footer a {
   font-size: 1.2rem;
   padding: 0.7rem 0.65rem;
   border-radius: 1rem;
-	margin: $form-size;
+	margin: 4rem;
 }
   
 .footer__wiggle:hover {
@@ -205,7 +205,7 @@ footer a {
 
 .hr h2 {  
   color: inherit;
-  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 80%, transparent 80,01%) no-repeat left bottom / 0 100%;
+  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 10%, transparent 10,01%) no-repeat left bottom / 0 100%;
   transition: background-size .5s;
 }
 
@@ -214,12 +214,16 @@ footer a {
 } 
 
 @keyframes underline {
-from {
+0% {
   background-size: 0% 100%;
+}
+1% {
+  background-size: 100% 100%;
   background-position: bottom left;
 }
-20% {
+50% {
   background-size: 100% 100%;
+  background-position: bottom right;
 }
 100% {
   background-size: 0% 100%;
@@ -270,7 +274,7 @@ from {
 
 .menupage__title {
   text-align: center;
-  font-size: 9rem;
+  font-size: 5rem;
 }
 
 .menu1page__title {
@@ -341,7 +345,7 @@ header img {
     margin-bottom: 27%;
   }
 
-  .menucarte h1 {
+  .menupage__title {
     font-size: 2rem;
   }
 
