@@ -133,11 +133,11 @@ footer a {
 
 .hr h2 {
   color: inherit;
-  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 10%, transparent 10, 1%) no-repeat left bottom/0 20%;
+  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 10%, transparent 10, 1%) no-repeat left bottom/0 100%;
   transition: background-size .3s; }
 
 .hr h2:hover {
-  background-size: 20% 20%; }
+  background-size: 100% 100%; }
 
 .menupage {
   box-shadow: 0.2rem 0.4rem 0.4rem 0.2rem #D8D8D8;
