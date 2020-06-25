@@ -192,18 +192,18 @@ footer a {
 
 .hr {  
   @include box-position;
-  align-items: center;
+  align-items: space-between;
   justify-content: center;
 }
 
 .hr h2 {  
     color: inherit;
-    background: linear-gradient(to top, $color-txt 0%, $color-txt 14%, transparent 14,01%) no-repeat left bottom / 0 40%;
+    background: linear-gradient(to top, $color-txt 0%, $color-txt 10%, transparent 10,01%) no-repeat left bottom / 0 20%;
     transition: background-size .3s;
 }
 
 .hr h2:hover {	
-	background-size: 40% 40%;
+	background-size: 20% 20%;
 }	
 
 .menupage {
@@ -266,6 +266,10 @@ footer a {
   color: $color-txt4;  
 }
 
+.menupage h1 {
+  font-size: $form-size;  
+}
+
 li {
 	display: flex;
 	flex-direction: row;
@@ -294,13 +298,22 @@ header img {
 @media all and (max-width: 768px)
 {
   .container {
-    margin-bottom: 2.5%;
+    margin-bottom: 4.5%;
   }
   .menupage {
     margin: 3.5%;
     padding: 1.5%;
-    margin-bottom: 18%;
+    margin-bottom: 22%;
   }
+
+  .menucarte h1 {
+    font-size: 2rem;
+  }
+
+  .menucarte h2 {
+    font-size: 0.9rem;
+  }
+
   .menucarte {
     padding: 2%;
   }
@@ -308,10 +321,13 @@ header img {
     width: 40%;
   }
   .hr {
-    width: 95%;
+    width: 99%;
   }
   footer a {
     font-size: 1.1rem;
+  }
+  li {
+    font-size: 0.7rem;
   }
 } 	
 	

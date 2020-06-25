@@ -128,16 +128,16 @@ footer a {
 .hr {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: space-between;
   justify-content: center; }
 
 .hr h2 {
   color: inherit;
-  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 14%, transparent 14, 1%) no-repeat left bottom/0 40%;
+  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 10%, transparent 10, 1%) no-repeat left bottom/0 20%;
   transition: background-size .3s; }
 
 .hr h2:hover {
-  background-size: 40% 40%; }
+  background-size: 20% 20%; }
 
 .menupage {
   box-shadow: 0.2rem 0.4rem 0.4rem 0.2rem #D8D8D8;
@@ -189,6 +189,9 @@ footer a {
   background-color: #F2FFF2;
   color: #4C9F42; }
 
+.menupage h1 {
+  font-size: 2rem; }
+
 li {
   display: flex;
   flex-direction: row;
@@ -212,12 +215,18 @@ header img {
 
 @media all and (max-width: 768px) {
   .container {
-    margin-bottom: 2.5%; }
+    margin-bottom: 4.5%; }
 
   .menupage {
     margin: 3.5%;
     padding: 1.5%;
-    margin-bottom: 18%; }
+    margin-bottom: 22%; }
+
+  .menucarte h1 {
+    font-size: 2rem; }
+
+  .menucarte h2 {
+    font-size: 0.9rem; }
 
   .menucarte {
     padding: 2%; }
@@ -226,9 +235,12 @@ header img {
     width: 40%; }
 
   .hr {
-    width: 95%; }
+    width: 99%; }
 
   footer a {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+
+  li {
+    font-size: 0.7rem; } }
 
 /*# sourceMappingURL=P3style.css.map */
