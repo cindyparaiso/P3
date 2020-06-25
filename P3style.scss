@@ -1,7 +1,7 @@
 $color-btn: #011c37;
 $color-shadow: 0.2rem 0.4rem 0.4rem 0.2rem #D8D8D8;
 $color-txt: #FDCB46;
-$color-txt1: #360000; 
+$color-txt1: #3C1218; 
 $color-txt3: #3D9FFA;
 $color-txt4: #4C9F42;
 $color-menu1: #FCDFDB;
@@ -91,7 +91,7 @@ footer a {
  font-size: 1rem;
  cursor: pointer;
  overflow: hidden; 
- padding: 6.3rem 1.8rem;
+ padding: 5.9rem 1.8rem;
  margin: 0.9rem 0.9rem; 
  box-shadow: $color-shadow; 
 }
@@ -205,11 +205,8 @@ footer a {
 
 .hr h2 {  
   color: inherit;
-  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 50%, transparent 50,01%) no-repeat left bottom / 0 100%;
+  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 80%, transparent 80,01%) no-repeat left bottom / 0 100%;
   transition: background-size .5s;
-}
-.hr h2 {
-  background-size: 0% 100%;
 }
 
 .hr h2:hover {
@@ -221,17 +218,14 @@ from {
   background-size: 0% 100%;
   background-position: bottom left;
 }
-50% {
+20% {
   background-size: 100% 100%;
-  background-position: bottom right;
-
 }
 100% {
   background-size: 0% 100%;
   background-position: bottom right;
 }
 } 
-
 
 .menupage {
   box-shadow: $color-shadow; 
@@ -311,10 +305,6 @@ from {
   @include gradientcolors;
 }
 
-.menupage h1 {
-  font-size: $form-size;  
-}
-
 li {
 	display: flex;
 	flex-direction: row;
@@ -322,10 +312,10 @@ li {
 	font-size: 1.1rem;
 }
 
-.resistance hr svg {
+.resistance svg {
  color: #A56799; 
 }
-.dessert hr svg {  
+.dessert svg {  
   color: #9861EF;
 }
 
