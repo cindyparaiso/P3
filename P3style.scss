@@ -87,7 +87,7 @@ footer a {
 
 .menu-btn {
  width: 95%; 
- height: 14rem;
+ height: 13rem;
  font-size: 1rem;
  cursor: pointer;
  overflow: hidden; 
@@ -162,7 +162,7 @@ footer a {
 }
   
 .Prochainement {
-  width: 11rem;
+  width: 13rem;
   height: auto;
 	background: $color-bann;
 	color: $color-txt; 
@@ -205,13 +205,30 @@ footer a {
 
 .hr h2 {  
     color: inherit;
-    background: linear-gradient(to top, #FDCB46 0%, #FDCB46 10%, transparent 10,01%) no-repeat left bottom / 0 100%;
+    background: linear-gradient(to top, #FDCB46 0%, #FDCB46 50%, transparent 50,01%) no-repeat left bottom / 0 100%;
     transition: background-size .3s;
 }
 
-.hr h2:hover {	
-	background-size: 100% 100%;
-}	
+.hr h2 {
+  background-size: 0% 100%;
+}
+
+.hr h2:hover {
+  animation: underline 5s both;
+} 
+
+@keyframes underline {
+from {
+  background-size: 0% 100%;
+}
+50% {
+  background-size: 100% 100%;
+}
+100% {
+  background-size: 0% 100%;
+}
+} 
+
 
 .menupage {
   box-shadow: $color-shadow; 
@@ -323,7 +340,7 @@ header img {
 @media all and (max-width: 768px)
 {
   .container {
-    margin-bottom: 4.5%;
+    margin-bottom: 8.5%;
   }
   .menupage {
     margin: 3.5%;
