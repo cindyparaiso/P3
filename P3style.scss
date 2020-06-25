@@ -190,7 +190,7 @@ footer a {
   }
 }
 
-hr {  
+.hr {  
   @include box-position;
   align-items: center;
   justify-content: center;
@@ -198,12 +198,12 @@ hr {
 
 .hr h2 {  
     color: inherit;
-    background: linear-gradient(to top, $color-txt 0%, $color-txt 10%, transparent 10,01%) no-repeat left bottom / 0 100%;
+    background: linear-gradient(to top, $color-txt 0%, $color-txt 14%, transparent 14,01%) no-repeat left bottom / 0 40%;
     transition: background-size .3s;
 }
 
 .hr h2:hover {	
-	background-size: 25% 100%;
+	background-size: 40% 40%;
 }	
 
 .menupage {
