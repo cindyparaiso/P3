@@ -97,7 +97,7 @@ footer a {
 }
 
 .menu__txt { 
-  width: 92%;
+  width: 95%;
   opacity: 1;
   filter: alpha(opacity=100); 
  }
@@ -205,30 +205,12 @@ footer a {
 
 .hr h2 {  
   color: inherit;
-  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 10%, transparent 10,01%) no-repeat left bottom / 0 100%;
-  transition: background-size .5s;
-}
+  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+  transition: background-size .3s;
+ }
 
 .hr h2:hover {
-  animation: underline 5s both;
-} 
-
-@keyframes underline {
-0% {
-  background-size: 0% 100%;
-}
-1% {
-  background-size: 100% 100%;
-  background-position: bottom left;
-}
-50% {
-  background-size: 100% 100%;
-  background-position: bottom right;
-}
-100% {
-  background-size: 0% 100%;
-  background-position: bottom right;
-}
+  background-size: 40% 100%;
 } 
 
 .menupage {
@@ -278,7 +260,8 @@ footer a {
 }
 
 .menu1page__title {
-	font-family: 'Devonshire', cursive;
+  font-family: 'Devonshire', cursive;
+  color: $color-txt1;
 }
 
 .menu2page__title {
@@ -337,7 +320,7 @@ header img {
 @media all and (max-width: 768px)
 {
   .container {
-    margin-bottom: 8.5%;
+    margin-bottom: 13.5%;
   }
   .menupage {
     margin: 3.5%;
