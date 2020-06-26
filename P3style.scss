@@ -327,14 +327,12 @@ li {
 .music svg {
   background: -webkit-linear-gradient(#C77412,#9861EF);
   background: -moz-linear-gradient(#C77412,#9861EF);
+  background: -ms-linear-gradient(#C77412,#9861EF);
   background: -o-linear-gradient(#C77412,#9861EF);
   @include gradientcolors; 
 }
 
 header img {
-  display : flex;
-  justify-content: center;
-  align-items: center;
   width: 29%;
   height: auto;
   float: center;
@@ -350,15 +348,12 @@ header img {
   .container {
     margin-bottom: 13.5%;
   }
-  .container1, .container2 {
-    flex-wrap: wrap;
-  }
   .menupage {
     margin: 3.5%;
     padding: 1.5%;
     margin-bottom: 27%;
   }
-  .menupage__title {
+  .menupage__title, .lanote {
     font-size: 2rem;
   }
   .menucarte h2 {
@@ -368,6 +363,8 @@ header img {
     padding: 2%;
   }
   header img {
+    margin-top: 5%;
+    margin-bottom: 5%;
     width: 40%;
   }
   .hr {
@@ -380,4 +377,11 @@ header img {
     font-size: 0.7rem;
   }
 } 	
-	
+  
+@media all and (max-width: 392px)
+{
+  .container1, .container2 {
+  flex-wrap: wrap;
+  }
+  
+} 
