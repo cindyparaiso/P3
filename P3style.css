@@ -68,13 +68,15 @@ footer a {
 .menu__txt {
   width: 99%;
   opacity: 1;
-  filter: alpha(opacity=100); }
+  filter: alpha(opacity=100);
+  transition: all .4s; }
 
-.menu-btn :hover .menu__txt {
+.menu-btn:hover .menu__txt {
   transform: scale(1.6);
   transform-origin: center;
   opacity: 0.85;
-  filter: alpha(opacity=85); }
+  filter: alpha(opacity=85);
+  transition: all .4s; }
 
 .points {
   font-size: 2rem; }
