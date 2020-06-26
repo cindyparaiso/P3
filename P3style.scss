@@ -54,6 +54,7 @@ footer {
   @include graphic-design;
   @include box-position;
   justify-content: space-around;
+  align-items: center;
   padding: 2%;
   width: 100%;
   position: fixed;
@@ -88,7 +89,7 @@ footer a {
 .menu-btn {
  width: 95%; 
  height: 16rem;
- font-size: 0.95rem;
+ font-size: 0.85rem;
  cursor: pointer;
  overflow: hidden; 
  padding: 5.6rem 1.8rem;
@@ -97,18 +98,18 @@ footer a {
 }
 
 .menu__txt { 
-  width: 99%;
+  width: 95%;
   opacity: 1;
   filter: alpha(opacity=100); 
-  transition: all .4s;
+  transition: all .5s;
  }
   
 .menu-btn:hover .menu__txt {
-  transform: scale(1.6);
+  transform: scale(1.55);
   transform-origin: center; 
   opacity: 0.85;
   filter: alpha(opacity=85);
-  transition: all .4s;
+  transition: all .5s;
  } 
 
 @mixin gradientcolors {
@@ -116,6 +117,8 @@ footer a {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
   -o-background-clip: text;
   -o-text-fill-color: transparent;
 }
@@ -207,7 +210,7 @@ footer a {
 
 .hr h2 {  
   color: inherit;
-  background: linear-gradient(to top, #FDCB46 0%, #FDCB46 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+  background: linear-gradient(to top, $color-txt1 0%, $color-txt1 4%, transparent 4.01%) no-repeat left bottom / 0 100%;
   transition: background-size .3s;
  }
 
@@ -224,17 +227,29 @@ footer a {
   text-align: justify;
   font-family: 'Bad Script', cursive;
   padding: 5%; 
-}
+ }
 
 .menu1page {
   color: $color-txt1;
   background: $color-menu1;
+  h2 {
+    font-weight: bold;
+  }
+  h3 {
+    text-align: center;
+    font-family: 'Devonshire', cursive;
+  }
 }
 
 .menu2page {
+  font-family: 'Bree Serif', serif;
   background: $color-menu2;  
+  h2 {
+    font-weight:bold;
+  }
  }
 
+ 
  .entree {
    color: #C77412;
  }
@@ -255,7 +270,7 @@ footer a {
   background: $color-menu4;
  }
 
-.menupage__title {
+.menupage__title, .lanote {
   text-align: center;
   font-size: 3.6rem;
 }
@@ -269,6 +284,7 @@ footer a {
   font-family: 'Bree Serif', serif;
   background: -webkit-linear-gradient(#C77412,#9861EF);
   background: -moz-linear-gradient(#C77412, #9861EF);
+  background: -ms-linear-gradient(#C77412, #9861EF);
   background: -o-linear-gradient(#C77412, #9861EF);
   @include gradientcolors;
 }
@@ -281,6 +297,7 @@ footer a {
   font-family: 'Dancing Script', cursive;
   background: -webkit-linear-gradient(#0022DB,#0889FB);
   background: -moz-linear-gradient(#0022DB,#0889FB);
+  background: -ms-linear-gradient(#0022DB,#0889FB);
   background: -o-linear-gradient(#0022DB,#0889FB);
   @include gradientcolors;
   }
@@ -307,7 +324,7 @@ li {
   color: #9861EF;
 }
 
-.menupage__title svg {
+.music svg {
   background: -webkit-linear-gradient(#C77412,#9861EF);
   background: -moz-linear-gradient(#C77412,#9861EF);
   background: -o-linear-gradient(#C77412,#9861EF);
@@ -315,6 +332,9 @@ li {
 }
 
 header img {
+  display : flex;
+  justify-content: center;
+  align-items: center;
   width: 29%;
   height: auto;
   float: center;
@@ -330,20 +350,20 @@ header img {
   .container {
     margin-bottom: 13.5%;
   }
+  .container1, .container2 {
+    flex-wrap: wrap;
+  }
   .menupage {
     margin: 3.5%;
     padding: 1.5%;
     margin-bottom: 27%;
   }
-
   .menupage__title {
     font-size: 2rem;
   }
-
   .menucarte h2 {
     font-size: 0.9rem;
   }
-
   .menucarte {
     padding: 2%;
   }
