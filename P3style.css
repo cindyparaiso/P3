@@ -156,7 +156,7 @@ footer a {
   background: #FCDFDB; }
 
 .menu2page {
-  background: #FFDDFC; }
+  background: #FFF5FE; }
 
 .entree {
   color: #C77412; }
@@ -194,7 +194,7 @@ footer a {
   -o-text-fill-color: transparent; }
 
 .menu2 {
-  background-color: #FFDDFC; }
+  background-color: #FFF5FE; }
 
 .menu3page__title {
   font-family: 'Dancing Script', cursive;
@@ -232,7 +232,7 @@ li {
 .dessert svg {
   color: #9861EF; }
 
-h1 i {
+.menupage__title svg {
   background: -webkit-linear-gradient(#C77412, #9861EF);
   background: -moz-linear-gradient(#C77412, #9861EF);
   background: -o-linear-gradient(#C77412, #9861EF);
@@ -241,8 +241,7 @@ h1 i {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   -o-background-clip: text;
-  -o-text-fill-color: transparent;
-  background-color: #FFDDFC; }
+  -o-text-fill-color: transparent; }
 
 header img {
   width: 29%;

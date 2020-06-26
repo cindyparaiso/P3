@@ -5,7 +5,7 @@ $color-txt1: #3C1218;
 $color-txt3: #3D9FFA;
 $color-txt4: #4C9F42;
 $color-menu1: #FCDFDB;
-$color-menu2: #FFDDFC;
+$color-menu2: #FFF5FE;
 $color-menu3: #EFEFEF;
 $color-menu4: #F2FFF2;
 $color-bann: #579C87;
@@ -305,12 +305,11 @@ li {
   color: #9861EF;
 }
 
-h1 i {
+.menupage__title svg {
   background: -webkit-linear-gradient(#C77412,#9861EF);
   background: -moz-linear-gradient(#C77412,#9861EF);
   background: -o-linear-gradient(#C77412,#9861EF);
-  @include gradientcolors;
-  background-color:$color-menu2; 
+  @include gradientcolors; 
 }
 
 header img {
