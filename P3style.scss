@@ -324,15 +324,16 @@ li {
   @include box-position;
   align-items: center;
   }
-  
-.music {
-  background: -webkit-linear-gradient(#C77412,#9861EF);
-  background: -moz-linear-gradient(#C77412,#9861EF);
-  background: -ms-linear-gradient(#C77412,#9861EF);
-  background: -o-linear-gradient(#C77412,#9861EF);
-  @include gradientcolors; 
-  background: $color-menu1;
-}
+
+.i fas {
+  font-size: 5rem;
+  font-style: normal;
+  font-family: fontawesome;
+  background: -webkit-linear-gradient(225deg, rgb(251, 175, 21), rgb(251, 21, 242),  
+  rgb(21, 198, 251)) 0% 0% / 300% 300%;
+  -webkit-background-clip: text;           
+  -webkit-text-fill-color: transparent; 
+ }
 
 header img {
   width: 29%;
