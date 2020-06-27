@@ -20,13 +20,13 @@ body {
   display: block;
   max-width: 80vw;
   height: auto;
-  margin: calc(50vh - 5rem) auto; }
+  margin: calc(10vh - 1rem) auto; }
 
 header {
   background: #579C87;
   text-align: center;
   font-family: 'Montserrat', sans serif;
-  height: auto;
+  height: 14%;
   display: flex;
   flex-direction: row; }
 
@@ -34,7 +34,7 @@ footer {
   background: #579C87;
   text-align: center;
   font-family: 'Montserrat', sans serif;
-  height: auto;
+  height: 14%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
