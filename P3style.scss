@@ -321,6 +321,11 @@ li {
 .dessert svg {  
   color: #9861EF;
 }
+
+.menu-text svg {
+text-align: center;
+}
+
 .music--box {
   @include box-position;
   align-items: center;
@@ -332,7 +337,7 @@ li {
   height: auto;
   margin-bottom: 5%;
   text-align: center;
-  float: center;
+  position: absolute;
 }
 
 .selector-for-some-widget
@@ -363,7 +368,7 @@ li {
     padding: 2%;
   }
   header img {
-    margin-top: 5%;
+    margin-top: 2%;
   }
   .hr {
     width: 99%;
