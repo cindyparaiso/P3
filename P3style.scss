@@ -241,13 +241,15 @@ footer a {
 
 .menucarte--2 {
   font-family: 'Bree Serif', serif;
-  background: $color-menu2;  
   h2 {
     font-weight:bold;
   }
  }
 
- 
+ .menu2page {
+  background: $color-menu2;  
+ }
+
  .entree {
    color: #C77412;
  }
@@ -276,6 +278,9 @@ footer a {
 .menu1page__title {
   font-family: 'Devonshire', cursive;
   color: $color-txt1;
+  a {
+    color: $color-txt1;
+  }
 }
 
 .menu2page__title {
@@ -285,10 +290,6 @@ footer a {
   background: -ms-linear-gradient(#C77412, #9861EF);
   background: -o-linear-gradient(#C77412, #9861EF);
   @include gradientcolors;
-}
-
-.menu2 {
-  background-color:$color-menu2; 
 }
 
 .menu3page__title {
