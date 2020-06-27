@@ -163,10 +163,10 @@ footer a {
     text-align: center;
     font-family: 'Devonshire', cursive; }
 
-.menu2page {
+.menucarte--2 {
   font-family: 'Bree Serif', serif;
   background: #FFF5FE; }
-  .menu2page h2 {
+  .menucarte--2 h2 {
     font-weight: bold; }
 
 .entree {
@@ -264,8 +264,7 @@ header img {
   width: 29%;
   height: auto;
   margin-bottom: 5%;
-  text-align: center;
-  position: absolute; }
+  text-align: center; }
 
 .selector-for-some-widget {
   box-sizing: content-box; }
