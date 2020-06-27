@@ -254,20 +254,13 @@ li {
   flex-direction: row;
   align-items: center; }
 
-.music svg {
-  background: -webkit-linear-gradient(#C77412, #9861EF);
-  background: -moz-linear-gradient(#C77412, #9861EF);
-  background: -ms-linear-gradient(#C77412, #9861EF);
-  background: -o-linear-gradient(#C77412, #9861EF);
+.i fas {
+  font-size: 5rem;
+  font-style: normal;
+  font-family: fontawesome;
+  background: -webkit-linear-gradient(225deg, #fbaf15, #fb15f2, #15c6fb) 0% 0%/300% 300%;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  -ms-background-clip: text;
-  -ms-text-fill-color: transparent;
-  -o-background-clip: text;
-  -o-text-fill-color: transparent;
-  background: #FCDFDB; }
+  -webkit-text-fill-color: transparent; }
 
 header img {
   width: 29%;
