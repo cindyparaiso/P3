@@ -157,8 +157,6 @@ footer a {
 .menu1page {
   color: #3C1218;
   background: #FCDFDB; }
-  .menu1page h2 {
-    font-weight: bold; }
   .menu1page h3 {
     text-align: center;
     font-family: 'Devonshire', cursive; }
@@ -251,6 +249,11 @@ li {
 .dessert svg {
   color: #9861EF; }
 
+.music--box {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
 .music svg {
   background: -webkit-linear-gradient(#C77412, #9861EF);
   background: -moz-linear-gradient(#C77412, #9861EF);
@@ -263,7 +266,8 @@ li {
   -ms-background-clip: text;
   -ms-text-fill-color: transparent;
   -o-background-clip: text;
-  -o-text-fill-color: transparent; }
+  -o-text-fill-color: transparent;
+  background: #FCDFDB; }
 
 header img {
   width: 29%;
