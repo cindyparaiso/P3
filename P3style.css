@@ -259,7 +259,8 @@ li {
 
 header img {
   width: 29%;
-  height: 9%;
+  height: auto;
+  margin-bottom: 5%;
   text-align: center;
   float: center; }
 
@@ -288,9 +289,7 @@ header img {
     padding: 2%; }
 
   header img {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    width: 40%; }
+    margin-top: 5%; }
 
   .hr {
     width: 99%; }
