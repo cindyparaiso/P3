@@ -349,6 +349,9 @@ header img {
   .container {
     margin-bottom: 13.5%;
   }
+  .menu-btn:hover .menu-txt {
+    transform: scale(1)
+  }
   .menupage {
     margin: 3.5%;
     padding: 1.5%;
