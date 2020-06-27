@@ -334,6 +334,13 @@ li {
   -webkit-background-clip: text;           
   -webkit-text-fill-color: transparent; 
  }
+ fa-stack-overflow:before {
+  color: transparent;
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(#F48024 20%, black);
+}
 
 header img {
   width: 29%;
