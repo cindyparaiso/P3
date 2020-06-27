@@ -15,14 +15,11 @@ body {
   margin: 0; }
 
 .lanote {
-  text-shadow: 0.25px 0.25px #F4F4F4, 0.5px 0.5px #F4F4F4, 0.75px 0.75px #F4F4F4, 1px 1px #F4F4F4, 1.25px 1.25px #F4F4F4, 1.5px 1.5px #F4F4F4, 1.75px 1.75px #F4F4F4, 2px 2px #F4F4F4, 2.25px 2.25px #F4F4F4, 2.5px 2.5px #F4F4F4, 2.75px 2.75px #F4F4F4, 3px 3px #F4F4F4, 3.25px 3.25px #F4F4F4, 3.5px 3.5px #F4F4F4, 3.75px 3.75px #F4F4F4, 4px 4px #F4F4F4, 4.25px 4.25px #F4F4F4, 4.5px 4.5px #F4F4F4, 4.75px 4.75px #F4F4F4, 5px 5px #F4F4F4, 5.25px 5.25px #F4F4F4, 5.5px 5.5px #F4F4F4, 5.75px 5.75px #F4F4F4, 6px 6px #F4F4F4; }
-
-.lanote {
+  text-shadow: 0.25px 0.25px #F4F4F4, 0.5px 0.5px #F4F4F4, 0.75px 0.75px #F4F4F4, 1px 1px #F4F4F4, 1.25px 1.25px #F4F4F4, 1.5px 1.5px #F4F4F4, 1.75px 1.75px #F4F4F4, 2px 2px #F4F4F4, 2.25px 2.25px #F4F4F4, 2.5px 2.5px #F4F4F4, 2.75px 2.75px #F4F4F4, 3px 3px #F4F4F4, 3.25px 3.25px #F4F4F4, 3.5px 3.5px #F4F4F4, 3.75px 3.75px #F4F4F4, 4px 4px #F4F4F4, 4.25px 4.25px #F4F4F4, 4.5px 4.5px #F4F4F4, 4.75px 4.75px #F4F4F4, 5px 5px #F4F4F4, 5.25px 5.25px #F4F4F4, 5.5px 5.5px #F4F4F4, 5.75px 5.75px #F4F4F4, 6px 6px #F4F4F4;
   text-transform: uppercase;
   display: block;
   max-width: 80vw;
   height: auto;
-  margin: 10rem auto;
   margin: calc(50vh - 5rem) auto; }
 
 header {

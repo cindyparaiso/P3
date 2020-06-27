@@ -59,18 +59,14 @@ body {
   @return $value;
 }
   
-  .lanote {
-    text-shadow: textShadow(0.25, 6, #F4F4F4);
-  }
-
-  .lanote {
-    text-transform: uppercase;
-    display: block;
-    max-width: 80vw;
-    height: auto;
-    margin: 10rem auto;
-    margin: calc(50vh - 5rem) auto;
-  }
+.lanote {
+  text-shadow: textShadow(0.25, 6, #F4F4F4);
+  text-transform: uppercase;
+  display: block;
+  max-width: 80vw;
+  height: auto;
+  margin: calc(50vh - 5rem) auto;
+}
 
 header {
   @include graphic-design;
