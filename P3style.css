@@ -14,6 +14,17 @@ body {
   text-align: center;
   margin: 0; }
 
+.lanote {
+  text-shadow: 0.25px 0.25px #E485F8, 0.5px 0.5px #E485F8, 0.75px 0.75px #E485F8, 1px 1px #E485F8, 1.25px 1.25px #E485F8, 1.5px 1.5px #E485F8, 1.75px 1.75px #E485F8, 2px 2px #E485F8, 2.25px 2.25px #E485F8, 2.5px 2.5px #E485F8, 2.75px 2.75px #E485F8, 3px 3px #E485F8, 3.25px 3.25px #E485F8, 3.5px 3.5px #E485F8, 3.75px 3.75px #E485F8, 4px 4px #E485F8, 4.25px 4.25px #E485F8, 4.5px 4.5px #E485F8, 4.75px 4.75px #E485F8, 5px 5px #E485F8, 5.25px 5.25px #E485F8, 5.5px 5.5px #E485F8, 5.75px 5.75px #E485F8, 6px 6px #E485F8; }
+
+.lanote {
+  text-transform: uppercase;
+  display: block;
+  max-width: 80vw;
+  height: auto;
+  margin: 10rem auto;
+  margin: calc(50vh - 5rem) auto; }
+
 header {
   background: #579C87;
   text-align: center;

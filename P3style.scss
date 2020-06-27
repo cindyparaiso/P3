@@ -46,6 +46,32 @@ body {
   flex-direction: row;
 }
 
+
+@function textShadow($precision, $size, $color) {
+  $value: null;
+  $offset: 0;
+  $length: $size* (1 / $precision) - 1;
+  @for $i from 0 through $length {
+    $offset : $offset + $precision;
+    $shadow : $offset + px $offset + px $color;
+    $value : append($value, $shadow, comma);
+  }
+  @return $value;
+}
+  
+  .lanote {
+    text-shadow: textShadow(0.25, 6, #E485F8);
+  }
+
+  .lanote {
+    text-transform: uppercase;
+    display: block;
+    max-width: 80vw;
+    height: auto;
+    margin: 10rem auto;
+    margin: calc(50vh - 5rem) auto;
+  }
+
 header {
   @include graphic-design;
   @include box-position;
