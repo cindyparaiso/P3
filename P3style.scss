@@ -324,7 +324,8 @@ li {
   @include box-position;
   align-items: center;
   }
-.music svg {
+  
+.music {
   background: -webkit-linear-gradient(#C77412,#9861EF);
   background: -moz-linear-gradient(#C77412,#9861EF);
   background: -ms-linear-gradient(#C77412,#9861EF);
