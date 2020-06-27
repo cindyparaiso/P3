@@ -326,7 +326,7 @@ li {
   }
 
 .music svg {
-  font-size: 5rem;
+  font-size: 2.5rem;
   font-style: normal;
   font-family: fontawesome;
   background: -webkit-linear-gradient(225deg, rgb(251, 175, 21), rgb(251, 21, 242),  
@@ -335,7 +335,7 @@ li {
   -webkit-text-fill-color: transparent; 
  }
 
- .fa-music-overflow:before {
+ .music svg-overflow:before {
   color: transparent;
   position: relative;
   background-clip: text;
