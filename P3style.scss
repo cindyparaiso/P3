@@ -325,25 +325,38 @@ li {
   align-items: center;
   }
 
-.music svg {
-  font-size: 2.5rem;
-  font-style: normal;
-  font-family: fontawesome;
-  background: -webkit-linear-gradient(225deg, rgb(251, 175, 21), rgb(251, 21, 242),  
-  rgb(21, 198, 251)) 0% 0% / 300% 300%;
-  -webkit-background-clip: text;           
-  -webkit-text-fill-color: transparent; 
- }
+  .music svg {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-family: fontawesome;
+    background: -webkit-linear-gradient(225deg, rgb(251, 175, 21), rgb(251, 21, 242),             
+    rgb(21, 198, 251)) 0% 0% / 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: 2s ease 0s infinite normal none running fontgradient;
+    -webkit-animation: fontgradient 2s ease infinite;
+    -moz-animation: fontgradient 2s ease infinite;
+    animation: fontgradient 2s ease infinite;  
+    }
 
- .music svg-overflow:before {
-  color: transparent;
-  position: relative;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(#F48024 20%, black);
-}
+    @-webkit-keyframes fontgradient {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+    }
+    @-moz-keyframes fontgradient {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+    }
+    @keyframes fontgradient { 
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+    }  
 
-header img {
+
+ header img {
   width: 29%;
   height: auto;
   float: center;
