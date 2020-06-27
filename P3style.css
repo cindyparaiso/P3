@@ -18,7 +18,9 @@ header {
   background: #579C87;
   text-align: center;
   font-family: 'Montserrat', sans serif;
-  height: 14%; }
+  height: 14%;
+  display: flex;
+  flex-direction: row; }
 
 footer {
   background: #579C87;
@@ -131,7 +133,7 @@ footer a {
     transform: translate3d(-8px, -10px, -9px); }
   40%, 60% {
     transform: translate3d(8px, 6px, 9px); } }
-.hr {
+.hr, .music {
   display: flex;
   flex-direction: row;
   align-items: space-between;
@@ -257,9 +259,9 @@ li {
 
 header img {
   width: 29%;
-  height: auto;
-  position: absolute;
-  text-align: justify; }
+  height: 9%;
+  text-align: center;
+  float: center; }
 
 .selector-for-some-widget {
   box-sizing: content-box; }

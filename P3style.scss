@@ -48,6 +48,7 @@ body {
 
 header {
   @include graphic-design;
+  @include box-position;
 }
 
 footer {
@@ -202,7 +203,7 @@ footer a {
   }
 }
 
-.hr {  
+.hr, .music {  
   @include box-position;
   align-items: space-between;
   justify-content: center;
@@ -328,9 +329,9 @@ li {
 
  header img {
   width: 29%;
-  height: auto;
-  position: absolute;
-  text-align: justify;
+  height: 9%;
+  text-align: center;
+  float: center;
 }
 
 .selector-for-some-widget
