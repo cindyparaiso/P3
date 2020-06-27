@@ -290,7 +290,8 @@ li {
 header img {
   width: 29%;
   height: auto;
-  position: absolute; }
+  position: absolute;
+  text-align: center; }
 
 .selector-for-some-widget {
   box-sizing: content-box; }
