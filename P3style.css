@@ -276,13 +276,11 @@ header img {
   .container {
     margin-bottom: 13.5%; }
 
-  .menu-btn:hover .menu-txt {
-    transform: none; }
-
   .menupage__title, .lanote {
     font-size: 2.7rem; }
 
   .menupage {
+    margin: 2%;
     margin-bottom: 27%; }
 
   .menucarte {
