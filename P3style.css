@@ -165,13 +165,11 @@ footer a {
     text-align: center;
     font-family: 'Devonshire', cursive; }
 
-.menucarte--2 {
-  font-family: 'Bree Serif', serif; }
-  .menucarte--2 h2 {
-    font-weight: bold; }
-
 .menu2page {
+  font-family: 'Bree Serif', serif;
   background: #FFF5FE; }
+  .menu2page h2 {
+    font-weight: bold; }
 
 .entree {
   color: #C77412; }
