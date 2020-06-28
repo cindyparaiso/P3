@@ -65,9 +65,8 @@ footer a {
   width: 95%;
   height: 16rem;
   font-size: 0.85rem;
-  cursor: pointer;
   overflow: hidden;
-  padding: 5.6rem 1.8rem;
+  padding: 4.5rem 1.8rem;
   margin: 0.9rem 0.9rem;
   box-shadow: 0.2rem 0.4rem 0.4rem 0.2rem #D8D8D8; }
 
@@ -139,8 +138,8 @@ footer a {
 .hr, .music {
   display: flex;
   flex-direction: row;
-  align-items: space-between;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
 
 .hr h2 {
   color: inherit;
@@ -263,6 +262,8 @@ li {
   flex-direction: row;
   align-items: center;
   justify-content: center; }
+  .music--box h3 {
+    font-size: 1.3rem; }
 
 header img {
   width: 29%;
@@ -276,21 +277,18 @@ header img {
     margin-bottom: 13.5%; }
 
   .menu-btn:hover .menu-txt {
-    transform: scale(1); }
+    transform: none; }
 
   .menupage__title, .lanote {
     font-size: 2.7rem; }
 
   .menupage {
     margin-bottom: 27%; }
-    .menupage li {
-      font-size: 0.95rem; }
 
   .menucarte {
     padding: 2%; }
-
-  header img {
-    height: 20%; }
+    .menucarte ul {
+      padding: 0; }
 
   .hr {
     width: 99%; }
