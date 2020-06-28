@@ -43,6 +43,16 @@ body {
   flex-direction: row;
 }
 
+@mixin gradientcolors { 
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;  
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;  
+  -ms-background-clip: text;  
+  -ms-text-fill-color: transparent;  
+  -o-background-clip: text;
+  -o-text-fill-color: transparent;
+}
 
 @function textShadow($precision, $size, $color) {
   $value: null;
@@ -130,16 +140,6 @@ footer a {
   transition: all .5s;
  } 
 
-@mixin gradientcolors {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  -ms-background-clip: text;
-  -ms-text-fill-color: transparent;
-  -o-background-clip: text;
-  -o-text-fill-color: transparent;
-}
 
 .points {
     font-size: $form-size;
@@ -255,12 +255,16 @@ footer a {
     font-family: 'Devonshire', cursive;
   }
 }
- .menu2page {
+
+.menucarte--2 {
   font-family: 'Bree Serif', serif;
-  background: $color-menu2;  
   h2 {
     font-weight:bold;
-  }  
+  }
+ }
+
+ .menu2page {
+  background: $color-menu2;  
  }
 
  .entree {
@@ -318,13 +322,13 @@ footer a {
   font-family: 'Kaushan Script', cursive;
   background: -webkit-linear-gradient(#45993E,#BEFF7F);
   background: -moz-linear-gradient(#45993E,#BEFF7F);
+  background: -ms-linear-gradient(#45993E, #BEFF7F);
   background: -o-linear-gradient(#45993E,#BEFF7F);
   @include gradientcolors;
 }
 
 li {
-	display: flex;
-	flex-direction: row;
+	@include box-position;
 	justify-content: space-between;
 	font-size: 1.1rem;
 }
@@ -377,7 +381,6 @@ text-align: center;
       padding:0;
     }
   }
-  
   .hr {
     width: 99%;
   }

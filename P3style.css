@@ -165,11 +165,13 @@ footer a {
     text-align: center;
     font-family: 'Devonshire', cursive; }
 
-.menu2page {
-  font-family: 'Bree Serif', serif;
-  background: #FFF5FE; }
-  .menu2page h2 {
+.menucarte--2 {
+  font-family: 'Bree Serif', serif; }
+  .menucarte--2 h2 {
     font-weight: bold; }
+
+.menu2page {
+  background: #FFF5FE; }
 
 .entree {
   color: #C77412; }
@@ -230,6 +232,7 @@ footer a {
   font-family: 'Kaushan Script', cursive;
   background: -webkit-linear-gradient(#45993E, #BEFF7F);
   background: -moz-linear-gradient(#45993E, #BEFF7F);
+  background: -ms-linear-gradient(#45993E, #BEFF7F);
   background: -o-linear-gradient(#45993E, #BEFF7F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
