@@ -1,8 +1,6 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
   box-sizing: inherit; }
 
 html {
@@ -25,7 +23,6 @@ header {
   background: #579C87;
   text-align: center;
   font-family: 'Montserrat', sans serif;
-  height: 14%;
   display: flex;
   flex-direction: row; }
 
@@ -33,7 +30,6 @@ footer {
   background: #579C87;
   text-align: center;
   font-family: 'Montserrat', sans serif;
-  height: 14%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -282,31 +278,25 @@ header img {
   .menu-btn:hover .menu-txt {
     transform: scale(1); }
 
-  .menupage {
-    margin: 3.5%;
-    padding: 1.5%;
-    margin-bottom: 27%; }
-
   .menupage__title, .lanote {
-    font-size: 2rem; }
+    font-size: 2.7rem; }
 
-  .menucarte h2 {
-    font-size: 0.9rem; }
+  .menupage {
+    margin-bottom: 27%; }
+    .menupage li {
+      font-size: 0.95rem; }
 
   .menucarte {
     padding: 2%; }
 
   header img {
-    width: 32%; }
+    height: 20%; }
 
   .hr {
     width: 99%; }
 
   footer a {
-    font-size: 1.1rem; }
-
-  li {
-    font-size: 0.7rem; } }
+    font-size: 1.1rem; } }
 @media all and (max-width: 392px) {
   .container1, .container2 {
     flex-wrap: wrap; } }
